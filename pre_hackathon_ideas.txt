@@ -20,8 +20,11 @@ Ideas:
 	-open world BUT really tiny *
 	-fishing game 
 	-looping game
-	-Vending machine game(Ask Wray, I do be cooking)
+	-Vending machine game(Ask Wray, I do be cooking) *fodian
 	-Text Support Game(Text adventure)
+	-Punch out like
+	-Physics
+	-Collegemon
 
 Team Name Ideas:
 	<insert team name>
