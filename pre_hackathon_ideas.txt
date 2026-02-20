@@ -20,6 +20,8 @@ Ideas:
 	-open world BUT really tiny *
 	-fishing game 
 	-looping game
+	-Vending machine game(Ask Wray, I do be cooking)
+	-Text Support Game(Text adventure)
 
 Team Name Ideas:
 	<insert team name>
