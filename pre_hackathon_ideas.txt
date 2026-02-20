@@ -1,0 +1,39 @@
+WE ARE NOT WORKING ON ANYTHING YET, JUST COMING UP WITH WHAT WE MIGHT MAKE
+
+Overview:
+	Game using Godot
+
+Ideas:
+	-anything
+	-pokemon * *
+	-tapple(like scrabble kinda of) *
+	-3d board game *
+	-jenga *
+	-super monkey ball *
+	-2d platformer *
+	-3d platformer * *
+	-open world BUT really tiny *
+	-fishing game 
+
+Team Name Ideas:
+	<insert team name>
+	-_- ask ai
+	
+Team Motto:
+	-_- ask ai
+
+Tasks:
+	Wray: Programming, 3d a wee bit
+	John: Programming
+	Mia: Programming, a wee bit of 2d art
+	Jason: Programming
+
+Notes:
+	
+	Original 
+	
+	cant be long because quick judgement period
+
+	We don't code the theme put it in story
+
+	Theme can add a gimic to spice things up
