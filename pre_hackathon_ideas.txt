@@ -25,6 +25,8 @@ Ideas:
 	-Punch out like
 	-Physics
 	-Collegemon
+	-game like become toast but hotdog, same stage, each level do more
+	-physics based cooking game
 
 Team Name Ideas:
 	<insert team name>
