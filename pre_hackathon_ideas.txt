@@ -3,6 +3,11 @@ WE ARE NOT WORKING ON ANYTHING YET, JUST COMING UP WITH WHAT WE MIGHT MAKE
 Overview:
 	Game using Godot
 
+Resources:
+	https://docs.godotengine.org/en/stable/
+	https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html Recommended
+	https://docs.godotengine.org/en/stable/getting_started/first_3d_game/index.html Recommended
+
 Ideas:
 	-anything
 	-pokemon * *
@@ -14,6 +19,7 @@ Ideas:
 	-3d platformer * *
 	-open world BUT really tiny *
 	-fishing game 
+	-looping game
 
 Team Name Ideas:
 	<insert team name>
