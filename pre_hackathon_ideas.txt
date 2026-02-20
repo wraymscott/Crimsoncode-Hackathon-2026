@@ -3,7 +3,7 @@ WE ARE NOT WORKING ON ANYTHING YET, JUST COMING UP WITH WHAT WE MIGHT MAKE
 Overview:
 	Game using Godot
 
-Ideas:
+Ideas (5 votes, what we might use if the theme doesn't matter too much):
 	-anything
 	-pokemon * *
 	-tapple(like scrabble kinda of) *
