@@ -2,10 +2,60 @@
 
 [ext_resource type="PackedScene" uid="uid://bne2agf2d74wy" path="res://assets/models/player/Barbarian.glb" id="1_rwm0n"]
 [ext_resource type="Script" uid="uid://cykpww3iuqomf" path="res://assets/scenes/player_controller.gd" id="1_s027a"]
+[ext_resource type="Animation" uid="uid://suiyw0lmrlea" path="res://assets/animations/player_animations/Crawling.res" id="3_beuf1"]
+[ext_resource type="Animation" uid="uid://b7x3shbaocehm" path="res://assets/animations/player_animations/Crouching.res" id="4_0e2pd"]
+[ext_resource type="Animation" uid="uid://b3jyircfseqdv" path="res://assets/animations/player_animations/Dodge_Backward.res" id="5_ay2jx"]
+[ext_resource type="Animation" uid="uid://dip2keqbxy7pg" path="res://assets/animations/player_animations/Dodge_Forward.res" id="6_jukhh"]
+[ext_resource type="Animation" uid="uid://cd2mgnq55ktut" path="res://assets/animations/player_animations/Dodge_Left.res" id="7_gdn7j"]
+[ext_resource type="Animation" uid="uid://bh5krxeu0jvwk" path="res://assets/animations/player_animations/Dodge_Right.res" id="8_6luef"]
+[ext_resource type="Animation" uid="uid://c2qm7tf0c4i0l" path="res://assets/animations/player_animations/Jump_Full_Long.res" id="9_gmant"]
+[ext_resource type="Animation" uid="uid://bnhujsagaf61v" path="res://assets/animations/player_animations/Jump_Full_Short.res" id="10_omckb"]
+[ext_resource type="Animation" uid="uid://6jaevc6idwmf" path="res://assets/animations/player_animations/Jump_Idle.res" id="11_uqo28"]
+[ext_resource type="Animation" uid="uid://blbu0wmpxsqwl" path="res://assets/animations/player_animations/Jump_Land.res" id="12_5eo68"]
+[ext_resource type="Animation" uid="uid://cf5aees7les3s" path="res://assets/animations/player_animations/Jump_Start.res" id="13_fiote"]
+[ext_resource type="Animation" uid="uid://b6vvdh0klslrb" path="res://assets/animations/player_animations/Running_A.res" id="14_5308x"]
+[ext_resource type="Animation" uid="uid://pgeihbb6ibj0" path="res://assets/animations/player_animations/Running_B.res" id="15_1hryd"]
+[ext_resource type="Animation" uid="uid://drlmq3njemh7q" path="res://assets/animations/player_animations/Running_HoldingBow.res" id="16_0rf7b"]
+[ext_resource type="Animation" uid="uid://cqjf1c18a58mj" path="res://assets/animations/player_animations/Running_HoldingRifle.res" id="17_anufl"]
+[ext_resource type="Animation" uid="uid://bux8c65igho0g" path="res://assets/animations/player_animations/Running_Strafe_Left.res" id="18_y16ip"]
+[ext_resource type="Animation" uid="uid://b7drec3j4hic6" path="res://assets/animations/player_animations/Running_Strafe_Right.res" id="19_wvkvj"]
+[ext_resource type="Animation" uid="uid://co48f70y8vsol" path="res://assets/animations/player_animations/Sneaking.res" id="20_na57t"]
+[ext_resource type="Animation" uid="uid://dlseu027draxc" path="res://assets/animations/player_animations/T-Pose.res" id="21_jd8hh"]
+[ext_resource type="Animation" uid="uid://dnb5tljm4t2rc" path="res://assets/animations/player_animations/Walking_A.res" id="22_yitjv"]
+[ext_resource type="Animation" uid="uid://b6mjrnpdme8lw" path="res://assets/animations/player_animations/Walking_B.res" id="23_qnek2"]
+[ext_resource type="Animation" uid="uid://dlcmgp2hsmos1" path="res://assets/animations/player_animations/Walking_Backwards.res" id="24_ike5y"]
+[ext_resource type="Animation" uid="uid://bpnfy2sgy4xfj" path="res://assets/animations/player_animations/Walking_C.res" id="25_p0j5o"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_14505"]
 radius = 0.6738281
 height = 2.5410156
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s027a"]
+_data = {
+&"Crawling": ExtResource("3_beuf1"),
+&"Crouching": ExtResource("4_0e2pd"),
+&"Dodge_Backward": ExtResource("5_ay2jx"),
+&"Dodge_Forward": ExtResource("6_jukhh"),
+&"Dodge_Left": ExtResource("7_gdn7j"),
+&"Dodge_Right": ExtResource("8_6luef"),
+&"Jump_Full_Long": ExtResource("9_gmant"),
+&"Jump_Full_Short": ExtResource("10_omckb"),
+&"Jump_Idle": ExtResource("11_uqo28"),
+&"Jump_Land": ExtResource("12_5eo68"),
+&"Jump_Start": ExtResource("13_fiote"),
+&"Running_A": ExtResource("14_5308x"),
+&"Running_B": ExtResource("15_1hryd"),
+&"Running_HoldingBow": ExtResource("16_0rf7b"),
+&"Running_HoldingRifle": ExtResource("17_anufl"),
+&"Running_Strafe_Left": ExtResource("18_y16ip"),
+&"Running_Strafe_Right": ExtResource("19_wvkvj"),
+&"Sneaking": ExtResource("20_na57t"),
+&"T-Pose": ExtResource("21_jd8hh"),
+&"Walking_A": ExtResource("22_yitjv"),
+&"Walking_B": ExtResource("23_qnek2"),
+&"Walking_Backwards": ExtResource("24_ike5y"),
+&"Walking_C": ExtResource("25_p0j5o")
+}
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_s027a"]
 
@@ -19,6 +69,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2280042, 0)
 shape = SubResource("CapsuleShape3D_14505")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1883836326]
+libraries/player = SubResource("AnimationLibrary_s027a")
 
 [node name="AnimationTree" type="AnimationTree" parent="." unique_id=1779719909]
 tree_root = SubResource("AnimationNodeStateMachine_s027a")
