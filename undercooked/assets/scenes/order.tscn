@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c3j8sxc4ya07t"]
+
+[ext_resource type="Script" uid="uid://cevt2555hpurh" path="res://assets/scripts/order.gd" id="1_ksfft"]
+
+[node name="Control" type="Control" unique_id=1259876849]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ksfft")
+
+[node name="patience_timer" type="Timer" parent="." unique_id=1185691144]
+one_shot = true
+
+[node name="bg" type="ColorRect" parent="." unique_id=477971589]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 100.0
+color = Color(1, 1, 0.6745098, 0.6666667)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="bg" unique_id=1284778796]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="name" type="Label" parent="bg/VBoxContainer" unique_id=1899992440]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="ingredients" type="Label" parent="bg/VBoxContainer" unique_id=1240032512]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+autowrap_mode = 2

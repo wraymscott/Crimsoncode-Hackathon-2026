@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cikef2qrlvsrk"]
 
-[ext_resource type="Script" uid="uid://d1n40iym13ok6" path="res://ui.gd" id="1_ayc1w"]
+[ext_resource type="Script" uid="uid://d1n40iym13ok6" path="res://assets/scripts/ui.gd" id="1_paq4i"]
 
 [sub_resource type="FontVariation" id="FontVariation_ayc1w"]
 
@@ -23,7 +23,7 @@ offset_right = 98.0
 offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ayc1w")
+script = ExtResource("1_paq4i")
 
 [node name="Order1Rect" type="ColorRect" parent="." unique_id=2104119953]
 custom_minimum_size = Vector2(150, 125)

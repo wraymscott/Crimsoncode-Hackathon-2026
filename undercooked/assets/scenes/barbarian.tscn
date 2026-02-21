@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://kmgxq0gr3hw6"]
 
-[ext_resource type="Script" uid="uid://cykpww3iuqomf" path="res://assets/scenes/player_controller.gd" id="1_vdydb"]
+[ext_resource type="Script" uid="uid://cykpww3iuqomf" path="res://assets/scripts/player_controller.gd" id="1_vdydb"]
 [ext_resource type="Texture2D" uid="uid://dslk3yturuex7" path="res://assets/models/player/Barbarian_barbarian_texture.png" id="2_r810p"]
 [ext_resource type="Animation" uid="uid://ij2vqgy2xyiu" path="res://assets/animations/player_animations/Idle_A.res" id="2_vdydb"]
 [ext_resource type="Animation" uid="uid://bfqowk5ab3alh" path="res://assets/animations/player_animations/Running_A.res" id="3_r810p"]
@@ -254,7 +254,7 @@ transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition
 radius = 0.69873047
 height = 2.4638672
 
-[node name="CharacterBody3D" type="CharacterBody3D" unique_id=909875531]
+[node name="CharacterBody3D2" type="CharacterBody3D" unique_id=909875531]
 script = ExtResource("1_vdydb")
 
 [node name="Barbarian" type="Node3D" parent="." unique_id=1210827197]

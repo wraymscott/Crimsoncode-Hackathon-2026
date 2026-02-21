@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://b8caucxueek11"]
 
-[ext_resource type="PackedScene" path="res://assets/scenes/barbarian.tscn" id="1_4g7pb"]
+[ext_resource type="PackedScene" uid="uid://kmgxq0gr3hw6" path="res://assets/scenes/barbarian.tscn" id="1_4g7pb"]
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="Environment" uid="uid://b8qokehsivgyt" path="res://assets/default_environment.tres" id="3_0ejtv"]
-[ext_resource type="PackedScene" path="res://assets/scenes/control.tscn" id="3_6khq1"]
 [ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="3_xoos5"]
-[ext_resource type="PackedScene" path="res://assets/scenes/orderManager.tscn" id="4_lr0kx"]
+[ext_resource type="PackedScene" uid="uid://d0kbtlgi4l1be" path="res://assets/scenes/order_manager.tscn" id="4_lr0kx"]
+[ext_resource type="PackedScene" uid="uid://c3j8sxc4ya07t" path="res://assets/scenes/order.tscn" id="6_xoos5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g7pb"]
 size = Vector3(20, 1, 20)
@@ -54,7 +54,6 @@ environment = ExtResource("3_0ejtv")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=321811847]
 environment = ExtResource("3_0ejtv")
 
-[node name="Control" parent="." unique_id=2134192412 instance=ExtResource("3_6khq1")]
-
-[node name="Node3D" parent="." unique_id=20328860 instance=ExtResource("4_lr0kx")]
+[node name="order_manager" parent="." unique_id=20328860 instance=ExtResource("4_lr0kx")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 12.45, 0)
+order_scene = ExtResource("6_xoos5")
