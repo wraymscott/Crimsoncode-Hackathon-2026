@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+@onready var animation_tree = $Barbarian/AnimationTree
+@onready var state_machine = animation_tree["parameters/playback"]
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
@@ -16,12 +18,20 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_down", "ui_up")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
+
 	if direction:
+		var target_angle = atan2(direction.x, direction.z)
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		
+		# Smoothly rotate toward that angle (0.15 is the weight/speed of turn)
+		rotation.y = lerp_angle(rotation.y, target_angle, 0.15)
+		state_machine.travel("running")
 	else:
+		state_machine.travel("idle")
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="undercooked"
-run/main_scene="uid://d2ujp4tnsbpex"
+run/main_scene="uid://bbqgmorvy80fq"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

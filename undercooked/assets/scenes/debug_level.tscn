@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bbqgmorvy80fq"]
 
-[ext_resource type="PackedScene" uid="uid://k0ao8lvcmgug" path="res://assets/scenes/player.tscn" id="1_hoyoc"]
+[ext_resource type="PackedScene" uid="uid://kmgxq0gr3hw6" path="res://assets/scenes/barbarian.tscn" id="1_hoyoc"]
 
 [node name="Node3D" type="Node3D" unique_id=1919188780]
 
@@ -11,8 +11,8 @@ use_collision = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1315918)
 size = Vector3(25, 1, 25)
 
-[node name="CharacterBody3D" parent="." unique_id=2146720752 instance=ExtResource("1_hoyoc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10515809, 2.0833821, 0.2988963)
-
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1902799195]
 transform = Transform3D(1, 0, 0, 0, 0.94422704, 0.32929516, 0, -0.32929516, 0.94422704, 0, 4.5833406, 5.284649)
+
+[node name="CharacterBody3D" parent="." unique_id=909875531 instance=ExtResource("1_hoyoc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1334267, 0)
