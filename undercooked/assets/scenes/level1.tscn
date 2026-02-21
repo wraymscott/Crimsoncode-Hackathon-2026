@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bfyirmbrtswgp"]
+
+[ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
+
+[node name="level1" type="Node3D" unique_id=266848435]
+
+[node name="floor" type="GridMap" parent="." unique_id=1333999171]
+mesh_library = ExtResource("1_14qug")
+cell_size = Vector3(4, 2, 4)
+
+[node name="walls" type="GridMap" parent="." unique_id=1718793836]
+mesh_library = ExtResource("1_14qug")
+cell_size = Vector3(4, 2, 4)
+
+[node name="furniture" type="GridMap" parent="." unique_id=1474614493]
+mesh_library = ExtResource("1_14qug")
+cell_size = Vector3(4, 2, 4)

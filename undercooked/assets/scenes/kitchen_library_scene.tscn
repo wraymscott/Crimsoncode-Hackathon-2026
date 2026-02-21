@@ -1,0 +1,436 @@
+[gd_scene format=3 uid="uid://bgqn3bw1daucy"]
+
+[ext_resource type="PackedScene" uid="uid://c7r0qabmn5af8" path="res://assets/models/raw/bowl.gltf" id="1_cuajb"]
+[ext_resource type="PackedScene" uid="uid://ca2nl5wg3t1ed" path="res://assets/models/raw/bowl_dirty.gltf" id="2_ts8nk"]
+[ext_resource type="PackedScene" uid="uid://chx3i3qutpt4b" path="res://assets/models/raw/bowl_small.gltf" id="3_2tmkw"]
+[ext_resource type="PackedScene" uid="uid://b7dvsay024hcu" path="res://assets/models/raw/chair_A.gltf" id="4_h3xv3"]
+[ext_resource type="PackedScene" uid="uid://bctqc2y3axlqa" path="res://assets/models/raw/chair_B.gltf" id="5_sroja"]
+[ext_resource type="PackedScene" uid="uid://bcvjpbv0dnm6g" path="res://assets/models/raw/chair_stool.gltf" id="6_sgl2o"]
+[ext_resource type="PackedScene" uid="uid://bmqbt04yfcsal" path="res://assets/models/raw/crate.gltf" id="7_qlckn"]
+[ext_resource type="PackedScene" uid="uid://d3yt8rf3chd3b" path="res://assets/models/raw/crate_buns.gltf" id="8_bta8b"]
+[ext_resource type="PackedScene" uid="uid://qfha4dtwnwl3" path="res://assets/models/raw/crate_carrots.gltf" id="9_7f714"]
+[ext_resource type="PackedScene" uid="uid://bol3ndx82igeh" path="res://assets/models/raw/crate_cheese.gltf" id="10_3n7dt"]
+[ext_resource type="PackedScene" uid="uid://bnip3rly56l6q" path="res://assets/models/raw/crate_ham.gltf" id="11_iplhx"]
+[ext_resource type="PackedScene" uid="uid://b4ah3rek1wnbt" path="res://assets/models/raw/crate_lettuce.gltf" id="12_230ur"]
+[ext_resource type="PackedScene" uid="uid://ca7o1q3rcmmyr" path="res://assets/models/raw/crate_lid.gltf" id="13_kqxyx"]
+[ext_resource type="PackedScene" uid="uid://dpw5rv63title" path="res://assets/models/raw/crate_onions.gltf" id="14_tyibo"]
+[ext_resource type="PackedScene" uid="uid://3epeg65hahtr" path="res://assets/models/raw/crate_potatoes.gltf" id="15_j6jbl"]
+[ext_resource type="PackedScene" uid="uid://bsla8ibp35pjf" path="res://assets/models/raw/crate_steak.gltf" id="16_wi1c1"]
+[ext_resource type="PackedScene" uid="uid://x4fgc8dlvsp5" path="res://assets/models/raw/crate_tomatoes.gltf" id="17_pwxks"]
+[ext_resource type="PackedScene" uid="uid://5tjthkm31auh" path="res://assets/models/raw/cuttingboard.gltf" id="18_nod3s"]
+[ext_resource type="PackedScene" uid="uid://d3865rcthxrw8" path="res://assets/models/raw/dishrack.gltf" id="19_gfkms"]
+[ext_resource type="PackedScene" uid="uid://bagfvxntskwsc" path="res://assets/models/raw/dishrack_plates.gltf" id="20_c5v2v"]
+[ext_resource type="PackedScene" uid="uid://bpx0tdwynyil7" path="res://assets/models/raw/door_A.gltf" id="21_2f4tq"]
+[ext_resource type="PackedScene" uid="uid://bmok3ul1cgyuw" path="res://assets/models/raw/door_B.gltf" id="22_8uyjs"]
+[ext_resource type="PackedScene" uid="uid://cepf7hm5mmo6x" path="res://assets/models/raw/extractorhood.gltf" id="23_g7gua"]
+[ext_resource type="PackedScene" uid="uid://b15kknxi1y21a" path="res://assets/models/raw/floor_kitchen.gltf" id="24_gvgdu"]
+[ext_resource type="PackedScene" uid="uid://bby0q8w6g36gy" path="res://assets/models/raw/floor_kitchen_small.gltf" id="25_b15kd"]
+[ext_resource type="PackedScene" uid="uid://jhq4pwi63464" path="res://assets/models/raw/food_burger.gltf" id="26_masab"]
+[ext_resource type="PackedScene" uid="uid://cwmlsjs5bxlmm" path="res://assets/models/raw/food_dinner.gltf" id="27_5luiq"]
+[ext_resource type="PackedScene" uid="uid://dq0kd11yxid1n" path="res://assets/models/raw/food_ingredient_bun.gltf" id="28_6qe3h"]
+[ext_resource type="PackedScene" uid="uid://dhd2fyfn3pqvw" path="res://assets/models/raw/food_ingredient_bun_bottom.gltf" id="29_hatq0"]
+[ext_resource type="PackedScene" uid="uid://1vxbgnofoomb" path="res://assets/models/raw/food_ingredient_bun_top.gltf" id="30_3s48w"]
+[ext_resource type="PackedScene" uid="uid://c2pmcsn5pcsh5" path="res://assets/models/raw/food_ingredient_burger_cooked.gltf" id="31_kd81t"]
+[ext_resource type="PackedScene" uid="uid://gxr06ftl2vj3" path="res://assets/models/raw/food_ingredient_burger_trash.gltf" id="32_x7ikr"]
+[ext_resource type="PackedScene" uid="uid://blrvqkqj516f3" path="res://assets/models/raw/food_ingredient_burger_uncooked.gltf" id="33_3bgoj"]
+[ext_resource type="PackedScene" uid="uid://k6jjydhafy6f" path="res://assets/models/raw/food_ingredient_carrot.gltf" id="34_xl1vw"]
+[ext_resource type="PackedScene" uid="uid://cw7clk3qrna8" path="res://assets/models/raw/food_ingredient_carrot_chopped.gltf" id="35_tkwq0"]
+[ext_resource type="PackedScene" uid="uid://c6m1ugjd6i8bb" path="res://assets/models/raw/food_ingredient_carrot_pieces.gltf" id="36_7nvlk"]
+[ext_resource type="PackedScene" uid="uid://ddadvd8bk3hkl" path="res://assets/models/raw/food_ingredient_cheese.gltf" id="37_qi7kt"]
+[ext_resource type="PackedScene" uid="uid://cvfaew1ufqk0x" path="res://assets/models/raw/food_ingredient_cheese_chopped.gltf" id="38_hsi55"]
+[ext_resource type="PackedScene" uid="uid://cdc2sa5spevhp" path="res://assets/models/raw/food_ingredient_cheese_slice.gltf" id="39_cqj6g"]
+[ext_resource type="PackedScene" uid="uid://b04wossb77jd5" path="res://assets/models/raw/food_ingredient_ham.gltf" id="40_w602w"]
+[ext_resource type="PackedScene" uid="uid://cqmm63vqfxufq" path="res://assets/models/raw/food_ingredient_ham_cooked.gltf" id="41_scb4p"]
+[ext_resource type="PackedScene" uid="uid://cpf0j387rguoc" path="res://assets/models/raw/food_ingredient_ham_trash.gltf" id="42_hruar"]
+[ext_resource type="PackedScene" uid="uid://d1ral3gvpsfr8" path="res://assets/models/raw/food_ingredient_lettuce.gltf" id="43_giel4"]
+[ext_resource type="PackedScene" uid="uid://bhd6318lahu7t" path="res://assets/models/raw/food_ingredient_lettuce_chopped.gltf" id="44_f0vu6"]
+[ext_resource type="PackedScene" uid="uid://dprxgvfrp5m1p" path="res://assets/models/raw/food_ingredient_lettuce_slice.gltf" id="45_w7wc0"]
+[ext_resource type="PackedScene" uid="uid://ccuff35nr3r6v" path="res://assets/models/raw/food_ingredient_onion.gltf" id="46_1qw3g"]
+[ext_resource type="PackedScene" uid="uid://dd0bgxowcm443" path="res://assets/models/raw/food_ingredient_onion_chopped.gltf" id="47_ec1gd"]
+[ext_resource type="PackedScene" uid="uid://b1xalva1rukub" path="res://assets/models/raw/food_ingredient_onion_rings.gltf" id="48_6fynp"]
+[ext_resource type="PackedScene" uid="uid://d1utgkf02yjju" path="res://assets/models/raw/food_ingredient_potato.gltf" id="49_k16pk"]
+[ext_resource type="PackedScene" uid="uid://vtjvyho7fp38" path="res://assets/models/raw/food_ingredient_potato_chopped.gltf" id="50_aalr0"]
+[ext_resource type="PackedScene" uid="uid://bwnnj4vbpg5qk" path="res://assets/models/raw/food_ingredient_potato_mashed.gltf" id="51_pjr6h"]
+[ext_resource type="PackedScene" uid="uid://dppgwyfs8h2ef" path="res://assets/models/raw/food_ingredient_steak.gltf" id="52_lifm5"]
+[ext_resource type="PackedScene" uid="uid://1oi4yy7wt26g" path="res://assets/models/raw/food_ingredient_steak_pieces.gltf" id="53_07rqn"]
+[ext_resource type="PackedScene" uid="uid://bdglp4ko1dfia" path="res://assets/models/raw/food_ingredient_tomato.gltf" id="54_nkwwo"]
+[ext_resource type="PackedScene" uid="uid://c2t7k8whyjcnh" path="res://assets/models/raw/food_ingredient_tomato_slice.gltf" id="55_kasd3"]
+[ext_resource type="PackedScene" uid="uid://c1n6ocdb3nd2w" path="res://assets/models/raw/food_ingredient_tomato_slices.gltf" id="56_pcomn"]
+[ext_resource type="PackedScene" uid="uid://dn870yly2v8fw" path="res://assets/models/raw/food_ingredient_vegetableburger_cooked.gltf" id="57_j5buy"]
+[ext_resource type="PackedScene" uid="uid://dyppqx8em8l0m" path="res://assets/models/raw/food_ingredient_vegetableburger_uncooked.gltf" id="58_1aej7"]
+[ext_resource type="PackedScene" uid="uid://bqcjx5np863ma" path="res://assets/models/raw/food_stew.gltf" id="59_h0o5t"]
+[ext_resource type="PackedScene" uid="uid://dcl8aexoihh8e" path="res://assets/models/raw/food_vegetableburger.gltf" id="60_0a27s"]
+[ext_resource type="PackedScene" uid="uid://bm5uj2xt0bi4i" path="res://assets/models/raw/fridge_A.gltf" id="61_sgavn"]
+[ext_resource type="PackedScene" uid="uid://cycjvr4e66bsm" path="res://assets/models/raw/fridge_A_decorated.gltf" id="62_4yonw"]
+[ext_resource type="PackedScene" uid="uid://djx5idsaufbn5" path="res://assets/models/raw/fridge_B.gltf" id="63_1ph6u"]
+[ext_resource type="PackedScene" uid="uid://cnl1pet6coqwj" path="res://assets/models/raw/jar_A_large.gltf" id="64_35jir"]
+[ext_resource type="PackedScene" uid="uid://bk6qnf34yh58v" path="res://assets/models/raw/jar_A_medium.gltf" id="65_j0eu1"]
+[ext_resource type="PackedScene" uid="uid://c1boekqii6li0" path="res://assets/models/raw/jar_A_small.gltf" id="66_uyq2b"]
+[ext_resource type="PackedScene" uid="uid://bl2f1x6a3gmmx" path="res://assets/models/raw/jar_B_large.gltf" id="67_6jrwo"]
+[ext_resource type="PackedScene" uid="uid://8gagtc4rn7u0" path="res://assets/models/raw/jar_B_medium.gltf" id="68_hpmjw"]
+[ext_resource type="PackedScene" uid="uid://b4lhx6kwn6477" path="res://assets/models/raw/jar_B_small.gltf" id="69_xq6uq"]
+[ext_resource type="PackedScene" uid="uid://bb0shfxi6kya7" path="res://assets/models/raw/jar_C_large.gltf" id="70_3dw8u"]
+[ext_resource type="PackedScene" uid="uid://f0fn0bo7eysj" path="res://assets/models/raw/jar_C_medium.gltf" id="71_13e5x"]
+[ext_resource type="PackedScene" uid="uid://d0b73pp041ta1" path="res://assets/models/raw/jar_C_small.gltf" id="72_l2684"]
+[ext_resource type="PackedScene" uid="uid://d2rk12y35awm7" path="res://assets/models/raw/jar_D_large.gltf" id="73_26o0x"]
+[ext_resource type="PackedScene" uid="uid://df0sqt32bh7kx" path="res://assets/models/raw/jar_D_medium.gltf" id="74_a5xvg"]
+[ext_resource type="PackedScene" uid="uid://c4o8uvhy6bpm2" path="res://assets/models/raw/jar_D_small.gltf" id="75_jb2dd"]
+[ext_resource type="PackedScene" uid="uid://bwr6846ql5cnl" path="res://assets/models/raw/ketchup.gltf" id="76_m53rw"]
+[ext_resource type="PackedScene" uid="uid://bb5mcbrblhmbo" path="res://assets/models/raw/kitchencabinet.gltf" id="77_vss44"]
+[ext_resource type="PackedScene" uid="uid://bfd83wchyw10l" path="res://assets/models/raw/kitchencabinet_corner.gltf" id="78_dcfvb"]
+[ext_resource type="PackedScene" uid="uid://c7yxpe7kefugu" path="res://assets/models/raw/kitchencabinet_corner_half.gltf" id="79_lycdd"]
+[ext_resource type="PackedScene" uid="uid://cowla8pjkbhoc" path="res://assets/models/raw/kitchencabinet_half.gltf" id="80_0hc7o"]
+[ext_resource type="PackedScene" uid="uid://drytw573ab3h2" path="res://assets/models/raw/kitchencounter_innercorner.gltf" id="81_26isi"]
+[ext_resource type="PackedScene" uid="uid://qbv0guqyyn0x" path="res://assets/models/raw/kitchencounter_innercorner_backsplash.gltf" id="82_op80x"]
+[ext_resource type="PackedScene" uid="uid://b17gwkclm2mtx" path="res://assets/models/raw/kitchencounter_outercorner.gltf" id="83_nuyhh"]
+[ext_resource type="PackedScene" uid="uid://clitj3bvvpg3j" path="res://assets/models/raw/kitchencounter_outercorner_backsplash.gltf" id="84_jqnm1"]
+[ext_resource type="PackedScene" uid="uid://c6kecsr38o24i" path="res://assets/models/raw/kitchencounter_sink.gltf" id="85_qpjpx"]
+[ext_resource type="PackedScene" uid="uid://b7e16f6hkxt8k" path="res://assets/models/raw/kitchencounter_sink_backsplash.gltf" id="86_fuh11"]
+[ext_resource type="PackedScene" uid="uid://cmxeu1e8eupne" path="res://assets/models/raw/kitchencounter_straight_A.gltf" id="87_f1ctr"]
+[ext_resource type="PackedScene" uid="uid://bhp6dqtfqkrs6" path="res://assets/models/raw/kitchencounter_straight_A_backsplash.gltf" id="88_jrrpq"]
+[ext_resource type="PackedScene" uid="uid://ddrfpq2bym8c0" path="res://assets/models/raw/kitchencounter_straight_A_decorated.gltf" id="89_op043"]
+[ext_resource type="PackedScene" uid="uid://n0r2l0r6vohg" path="res://assets/models/raw/kitchencounter_straight_B.gltf" id="90_v5bx2"]
+[ext_resource type="PackedScene" uid="uid://cqy3ubqvytsh3" path="res://assets/models/raw/kitchencounter_straight_B_backsplash.gltf" id="91_pf0tx"]
+[ext_resource type="PackedScene" uid="uid://dlb73iqikmknq" path="res://assets/models/raw/kitchencounter_straight_decorated.gltf" id="92_yfagv"]
+[ext_resource type="PackedScene" uid="uid://bwrc6ie83br7r" path="res://assets/models/raw/kitchentable_A.gltf" id="93_1j110"]
+[ext_resource type="PackedScene" uid="uid://d3w27bbqttcoq" path="res://assets/models/raw/kitchentable_A_large.gltf" id="94_gioc4"]
+[ext_resource type="PackedScene" uid="uid://ecc6xecu0tfp" path="res://assets/models/raw/kitchentable_A_large_decorated.gltf" id="95_yddh0"]
+[ext_resource type="PackedScene" uid="uid://yioyfjj4mwii" path="res://assets/models/raw/kitchentable_B.gltf" id="96_u0g51"]
+[ext_resource type="PackedScene" uid="uid://c48cn8edh3g81" path="res://assets/models/raw/kitchentable_B_large.gltf" id="97_o1mh8"]
+[ext_resource type="PackedScene" uid="uid://bibwa4pjv47lw" path="res://assets/models/raw/kitchentable_sink.gltf" id="98_okb3c"]
+[ext_resource type="PackedScene" uid="uid://dl2c3x5hsdgio" path="res://assets/models/raw/kitchentable_sink_large.gltf" id="99_ukxtk"]
+[ext_resource type="PackedScene" uid="uid://dhft50syn6qsy" path="res://assets/models/raw/kitchentable_sink_large_decorated.gltf" id="100_ddqvj"]
+[ext_resource type="PackedScene" uid="uid://djlo0kxp4mfsl" path="res://assets/models/raw/knife.gltf" id="101_cl0cm"]
+[ext_resource type="PackedScene" uid="uid://dntmobukxycom" path="res://assets/models/raw/lid_A.gltf" id="102_4uqlb"]
+[ext_resource type="PackedScene" uid="uid://cbe61wmdy3arf" path="res://assets/models/raw/lid_B.gltf" id="103_4xrst"]
+[ext_resource type="PackedScene" uid="uid://daowhxituay6i" path="res://assets/models/raw/lid_large.gltf" id="104_3ppxc"]
+[ext_resource type="PackedScene" uid="uid://bsghwwrx3djk" path="res://assets/models/raw/menu.gltf" id="105_ngrok"]
+[ext_resource type="PackedScene" uid="uid://bksdf53mqvfx0" path="res://assets/models/raw/mustard.gltf" id="106_qi4r7"]
+[ext_resource type="PackedScene" uid="uid://6pliupcxxuam" path="res://assets/models/raw/oven.gltf" id="107_hntc5"]
+[ext_resource type="PackedScene" uid="uid://dsjlfm3tcvkqf" path="res://assets/models/raw/pan_006.gltf" id="108_l57cn"]
+[ext_resource type="PackedScene" uid="uid://dfjjqtgtp7ys3" path="res://assets/models/raw/pan_A.gltf" id="109_dtajh"]
+[ext_resource type="PackedScene" uid="uid://bkue23wfbblbj" path="res://assets/models/raw/pan_B.gltf" id="110_a4pnx"]
+[ext_resource type="PackedScene" uid="uid://3ueuwvvkrgqi" path="res://assets/models/raw/papertowel.gltf" id="111_hmvj4"]
+[ext_resource type="PackedScene" uid="uid://gof1swftsnco" path="res://assets/models/raw/pillar_A.gltf" id="112_jp883"]
+[ext_resource type="PackedScene" uid="uid://b3v02rfxmgwog" path="res://assets/models/raw/pillar_B.gltf" id="113_bgcj0"]
+[ext_resource type="PackedScene" uid="uid://c7ptnagtq1dff" path="res://assets/models/raw/plate.gltf" id="114_wdt7e"]
+[ext_resource type="PackedScene" uid="uid://bw5r6y0hdyy2e" path="res://assets/models/raw/plate_dirty.gltf" id="115_8e31k"]
+[ext_resource type="PackedScene" uid="uid://b4k77iecc1b0f" path="res://assets/models/raw/plate_small.gltf" id="116_yhprr"]
+[ext_resource type="PackedScene" uid="uid://bisdbg3dd66r" path="res://assets/models/raw/pot_A.gltf" id="117_7npd5"]
+[ext_resource type="PackedScene" uid="uid://bdss7bmrj75s3" path="res://assets/models/raw/pot_A_stew.gltf" id="118_r1np1"]
+[ext_resource type="PackedScene" uid="uid://bno5b0racfihk" path="res://assets/models/raw/pot_B.gltf" id="119_cso1j"]
+[ext_resource type="PackedScene" uid="uid://bn6xcvva4bef5" path="res://assets/models/raw/pot_B_stew.gltf" id="120_ra1l4"]
+[ext_resource type="PackedScene" uid="uid://durt0vyb3fgxc" path="res://assets/models/raw/pot_large.gltf" id="121_wvc7a"]
+[ext_resource type="PackedScene" uid="uid://b6ij58lab0t2l" path="res://assets/models/raw/shelf_papertowel.gltf" id="122_cpom4"]
+[ext_resource type="PackedScene" uid="uid://gipbufcdqwb7" path="res://assets/models/raw/shelf_papertowel_decorated.gltf" id="123_nu13u"]
+[ext_resource type="PackedScene" uid="uid://dm2ojhxcqqbxh" path="res://assets/models/raw/stew_bowl.gltf" id="124_ij4pl"]
+[ext_resource type="PackedScene" uid="uid://dndflpe8y4n0b" path="res://assets/models/raw/stew_pot.gltf" id="125_pc73o"]
+[ext_resource type="PackedScene" uid="uid://dikietk2pv7oj" path="res://assets/models/raw/stove_multi.gltf" id="126_wmfev"]
+[ext_resource type="PackedScene" uid="uid://bkkl1f2pol87m" path="res://assets/models/raw/stove_multi_countertop.gltf" id="127_57wir"]
+[ext_resource type="PackedScene" uid="uid://ca5uuqbred3ke" path="res://assets/models/raw/stove_multi_decorated.gltf" id="128_a0n21"]
+[ext_resource type="PackedScene" uid="uid://c7t1wvtgue82a" path="res://assets/models/raw/stove_single.gltf" id="129_epycy"]
+[ext_resource type="PackedScene" uid="uid://c4k8jod26xkuu" path="res://assets/models/raw/stove_single_countertop.gltf" id="130_vrrs5"]
+[ext_resource type="PackedScene" uid="uid://cl8dlmcywy2tg" path="res://assets/models/raw/table_round_A.gltf" id="131_2efxw"]
+[ext_resource type="PackedScene" uid="uid://c0j5muuej1kxt" path="res://assets/models/raw/table_round_A_decorated.gltf" id="132_a5g1w"]
+[ext_resource type="PackedScene" uid="uid://fre6x3axq37x" path="res://assets/models/raw/table_round_A_small.gltf" id="133_owetg"]
+[ext_resource type="PackedScene" uid="uid://y04d3em6q15p" path="res://assets/models/raw/table_round_A_small_decorated.gltf" id="134_k8y67"]
+[ext_resource type="PackedScene" uid="uid://7wo70b53gs2m" path="res://assets/models/raw/table_round_B.gltf" id="135_lq7f7"]
+[ext_resource type="PackedScene" uid="uid://d2okkp1m7d4jq" path="res://assets/models/raw/towelrail.gltf" id="136_8lfcj"]
+[ext_resource type="PackedScene" uid="uid://dwyomht20lmb6" path="res://assets/models/raw/wall.gltf" id="137_w34ng"]
+[ext_resource type="PackedScene" uid="uid://bugafkspsm4sv" path="res://assets/models/raw/wall_decorated.gltf" id="138_8iutn"]
+[ext_resource type="PackedScene" uid="uid://c7wf14xj2228n" path="res://assets/models/raw/wall_doorway.gltf" id="139_qoawt"]
+[ext_resource type="PackedScene" uid="uid://lld2icd6n4a6" path="res://assets/models/raw/wall_half.gltf" id="140_btn0r"]
+[ext_resource type="PackedScene" uid="uid://dtk3iyoaqmco0" path="res://assets/models/raw/wall_orderwindow.gltf" id="141_w5o74"]
+[ext_resource type="PackedScene" uid="uid://c8f7jv7jstugd" path="res://assets/models/raw/wall_orderwindow_decorated.gltf" id="142_q0vgf"]
+[ext_resource type="PackedScene" uid="uid://dblq50587n5ij" path="res://assets/models/raw/wall_window_closed.gltf" id="143_smq5c"]
+[ext_resource type="PackedScene" uid="uid://cqgy4qsaik86e" path="res://assets/models/raw/wall_window_open.gltf" id="144_qvg0i"]
+
+[node name="Node3D" type="Node3D" unique_id=1672167727]
+
+[node name="bowl2" parent="." unique_id=1213124659 instance=ExtResource("1_cuajb")]
+
+[node name="bowl_dirty2" parent="." unique_id=926197139 instance=ExtResource("2_ts8nk")]
+
+[node name="bowl_small2" parent="." unique_id=1129231344 instance=ExtResource("3_2tmkw")]
+
+[node name="chair_A2" parent="." unique_id=897444050 instance=ExtResource("4_h3xv3")]
+
+[node name="chair_B2" parent="." unique_id=2084598130 instance=ExtResource("5_sroja")]
+
+[node name="chair_stool2" parent="." unique_id=1745000641 instance=ExtResource("6_sgl2o")]
+
+[node name="crate2" parent="." unique_id=409431632 instance=ExtResource("7_qlckn")]
+
+[node name="crate_buns2" parent="." unique_id=1087448260 instance=ExtResource("8_bta8b")]
+
+[node name="crate_carrots2" parent="." unique_id=1530842492 instance=ExtResource("9_7f714")]
+
+[node name="crate_cheese2" parent="." unique_id=628737902 instance=ExtResource("10_3n7dt")]
+
+[node name="crate_ham2" parent="." unique_id=1617236994 instance=ExtResource("11_iplhx")]
+
+[node name="crate_lettuce2" parent="." unique_id=1904495247 instance=ExtResource("12_230ur")]
+
+[node name="crate_lid2" parent="." unique_id=491327647 instance=ExtResource("13_kqxyx")]
+
+[node name="crate_onions2" parent="." unique_id=757223453 instance=ExtResource("14_tyibo")]
+
+[node name="crate_potatoes2" parent="." unique_id=1259931366 instance=ExtResource("15_j6jbl")]
+
+[node name="crate_steak2" parent="." unique_id=239182365 instance=ExtResource("16_wi1c1")]
+
+[node name="crate_tomatoes2" parent="." unique_id=1836132504 instance=ExtResource("17_pwxks")]
+
+[node name="cuttingboard2" parent="." unique_id=554585079 instance=ExtResource("18_nod3s")]
+
+[node name="dishrack2" parent="." unique_id=2008060910 instance=ExtResource("19_gfkms")]
+
+[node name="dishrack_plates2" parent="." unique_id=1686538343 instance=ExtResource("20_c5v2v")]
+
+[node name="door_A2" parent="." unique_id=1297297212 instance=ExtResource("21_2f4tq")]
+
+[node name="door_B2" parent="." unique_id=1423448597 instance=ExtResource("22_8uyjs")]
+
+[node name="extractorhood2" parent="." unique_id=1802727277 instance=ExtResource("23_g7gua")]
+
+[node name="floor_kitchen2" parent="." unique_id=1741477303 instance=ExtResource("24_gvgdu")]
+
+[node name="floor_kitchen_small2" parent="." unique_id=1295120301 instance=ExtResource("25_b15kd")]
+
+[node name="food_burger2" parent="." unique_id=1361598012 instance=ExtResource("26_masab")]
+
+[node name="food_dinner2" parent="." unique_id=2084797638 instance=ExtResource("27_5luiq")]
+
+[node name="food_ingredient_bun2" parent="." unique_id=686606954 instance=ExtResource("28_6qe3h")]
+
+[node name="food_ingredient_bun_bottom2" parent="." unique_id=1784327739 instance=ExtResource("29_hatq0")]
+
+[node name="food_ingredient_bun_top2" parent="." unique_id=276405471 instance=ExtResource("30_3s48w")]
+
+[node name="food_ingredient_burger_cooked2" parent="." unique_id=1698967627 instance=ExtResource("31_kd81t")]
+
+[node name="food_ingredient_burger_trash2" parent="." unique_id=1288581754 instance=ExtResource("32_x7ikr")]
+
+[node name="food_ingredient_burger_uncooked2" parent="." unique_id=585007965 instance=ExtResource("33_3bgoj")]
+
+[node name="food_ingredient_carrot2" parent="." unique_id=370911621 instance=ExtResource("34_xl1vw")]
+
+[node name="food_ingredient_carrot_chopped2" parent="." unique_id=1646604517 instance=ExtResource("35_tkwq0")]
+
+[node name="food_ingredient_carrot_pieces2" parent="." unique_id=1704610922 instance=ExtResource("36_7nvlk")]
+
+[node name="food_ingredient_cheese2" parent="." unique_id=1934665635 instance=ExtResource("37_qi7kt")]
+
+[node name="food_ingredient_cheese_chopped2" parent="." unique_id=998938356 instance=ExtResource("38_hsi55")]
+
+[node name="food_ingredient_cheese_slice2" parent="." unique_id=1638656074 instance=ExtResource("39_cqj6g")]
+
+[node name="food_ingredient_ham2" parent="." unique_id=381789482 instance=ExtResource("40_w602w")]
+
+[node name="food_ingredient_ham_cooked2" parent="." unique_id=498167771 instance=ExtResource("41_scb4p")]
+
+[node name="food_ingredient_ham_trash2" parent="." unique_id=127993124 instance=ExtResource("42_hruar")]
+
+[node name="food_ingredient_lettuce2" parent="." unique_id=929490837 instance=ExtResource("43_giel4")]
+
+[node name="food_ingredient_lettuce_chopped2" parent="." unique_id=1693090100 instance=ExtResource("44_f0vu6")]
+
+[node name="food_ingredient_lettuce_slice2" parent="." unique_id=1216556271 instance=ExtResource("45_w7wc0")]
+
+[node name="food_ingredient_onion2" parent="." unique_id=418885976 instance=ExtResource("46_1qw3g")]
+
+[node name="food_ingredient_onion_chopped2" parent="." unique_id=42791379 instance=ExtResource("47_ec1gd")]
+
+[node name="food_ingredient_onion_rings2" parent="." unique_id=415297675 instance=ExtResource("48_6fynp")]
+
+[node name="food_ingredient_potato2" parent="." unique_id=653934548 instance=ExtResource("49_k16pk")]
+
+[node name="food_ingredient_potato_chopped2" parent="." unique_id=1819795573 instance=ExtResource("50_aalr0")]
+
+[node name="food_ingredient_potato_mashed2" parent="." unique_id=742934624 instance=ExtResource("51_pjr6h")]
+
+[node name="food_ingredient_steak2" parent="." unique_id=1465523006 instance=ExtResource("52_lifm5")]
+
+[node name="food_ingredient_steak_pieces2" parent="." unique_id=1364279216 instance=ExtResource("53_07rqn")]
+
+[node name="food_ingredient_tomato2" parent="." unique_id=570167171 instance=ExtResource("54_nkwwo")]
+
+[node name="food_ingredient_tomato_slice2" parent="." unique_id=839943822 instance=ExtResource("55_kasd3")]
+
+[node name="food_ingredient_tomato_slices2" parent="." unique_id=2075436974 instance=ExtResource("56_pcomn")]
+
+[node name="food_ingredient_vegetableburger_cooked2" parent="." unique_id=2031072651 instance=ExtResource("57_j5buy")]
+
+[node name="food_ingredient_vegetableburger_uncooked2" parent="." unique_id=888165174 instance=ExtResource("58_1aej7")]
+
+[node name="food_stew2" parent="." unique_id=442527206 instance=ExtResource("59_h0o5t")]
+
+[node name="food_vegetableburger2" parent="." unique_id=708831974 instance=ExtResource("60_0a27s")]
+
+[node name="fridge_A2" parent="." unique_id=1626039670 instance=ExtResource("61_sgavn")]
+
+[node name="fridge_A_decorated2" parent="." unique_id=383990647 instance=ExtResource("62_4yonw")]
+
+[node name="fridge_B2" parent="." unique_id=1291504536 instance=ExtResource("63_1ph6u")]
+
+[node name="jar_A_large2" parent="." unique_id=2145313823 instance=ExtResource("64_35jir")]
+
+[node name="jar_A_medium2" parent="." unique_id=2078405726 instance=ExtResource("65_j0eu1")]
+
+[node name="jar_A_small2" parent="." unique_id=1944698110 instance=ExtResource("66_uyq2b")]
+
+[node name="jar_B_large2" parent="." unique_id=2073738152 instance=ExtResource("67_6jrwo")]
+
+[node name="jar_B_medium2" parent="." unique_id=2083219855 instance=ExtResource("68_hpmjw")]
+
+[node name="jar_B_small2" parent="." unique_id=1322602773 instance=ExtResource("69_xq6uq")]
+
+[node name="jar_C_large2" parent="." unique_id=1065617055 instance=ExtResource("70_3dw8u")]
+
+[node name="jar_C_medium2" parent="." unique_id=776965627 instance=ExtResource("71_13e5x")]
+
+[node name="jar_C_small2" parent="." unique_id=2136110265 instance=ExtResource("72_l2684")]
+
+[node name="jar_D_large2" parent="." unique_id=291014325 instance=ExtResource("73_26o0x")]
+
+[node name="jar_D_medium2" parent="." unique_id=227039529 instance=ExtResource("74_a5xvg")]
+
+[node name="jar_D_small2" parent="." unique_id=81156474 instance=ExtResource("75_jb2dd")]
+
+[node name="ketchup2" parent="." unique_id=2083030944 instance=ExtResource("76_m53rw")]
+
+[node name="kitchencabinet2" parent="." unique_id=755213890 instance=ExtResource("77_vss44")]
+
+[node name="kitchencabinet_corner2" parent="." unique_id=229281689 instance=ExtResource("78_dcfvb")]
+
+[node name="kitchencabinet_corner_half2" parent="." unique_id=1326039851 instance=ExtResource("79_lycdd")]
+
+[node name="kitchencabinet_half2" parent="." unique_id=935320042 instance=ExtResource("80_0hc7o")]
+
+[node name="kitchencounter_innercorner2" parent="." unique_id=1802284086 instance=ExtResource("81_26isi")]
+
+[node name="kitchencounter_innercorner_backsplash2" parent="." unique_id=1070738689 instance=ExtResource("82_op80x")]
+
+[node name="kitchencounter_outercorner2" parent="." unique_id=914143178 instance=ExtResource("83_nuyhh")]
+
+[node name="kitchencounter_outercorner_backsplash2" parent="." unique_id=303431075 instance=ExtResource("84_jqnm1")]
+
+[node name="kitchencounter_sink2" parent="." unique_id=1147522762 instance=ExtResource("85_qpjpx")]
+
+[node name="kitchencounter_sink_backsplash2" parent="." unique_id=1374257924 instance=ExtResource("86_fuh11")]
+
+[node name="kitchencounter_straight_A2" parent="." unique_id=243328060 instance=ExtResource("87_f1ctr")]
+
+[node name="kitchencounter_straight_A_backsplash2" parent="." unique_id=1441538736 instance=ExtResource("88_jrrpq")]
+
+[node name="kitchencounter_straight_A_decorated2" parent="." unique_id=378382788 instance=ExtResource("89_op043")]
+
+[node name="kitchencounter_straight_B2" parent="." unique_id=1174749385 instance=ExtResource("90_v5bx2")]
+
+[node name="kitchencounter_straight_B_backsplash2" parent="." unique_id=1300157032 instance=ExtResource("91_pf0tx")]
+
+[node name="kitchencounter_straight_decorated2" parent="." unique_id=1808926901 instance=ExtResource("92_yfagv")]
+
+[node name="kitchentable_A2" parent="." unique_id=248580826 instance=ExtResource("93_1j110")]
+
+[node name="kitchentable_A_large2" parent="." unique_id=1549889423 instance=ExtResource("94_gioc4")]
+
+[node name="kitchentable_A_large_decorated2" parent="." unique_id=280570931 instance=ExtResource("95_yddh0")]
+
+[node name="kitchentable_B2" parent="." unique_id=2035641240 instance=ExtResource("96_u0g51")]
+
+[node name="kitchentable_B_large2" parent="." unique_id=902597339 instance=ExtResource("97_o1mh8")]
+
+[node name="kitchentable_sink2" parent="." unique_id=1062257687 instance=ExtResource("98_okb3c")]
+
+[node name="kitchentable_sink_large2" parent="." unique_id=1479463986 instance=ExtResource("99_ukxtk")]
+
+[node name="kitchentable_sink_large_decorated2" parent="." unique_id=2002942914 instance=ExtResource("100_ddqvj")]
+
+[node name="knife2" parent="." unique_id=1071790861 instance=ExtResource("101_cl0cm")]
+
+[node name="lid_A2" parent="." unique_id=1179307912 instance=ExtResource("102_4uqlb")]
+
+[node name="lid_B2" parent="." unique_id=1575786089 instance=ExtResource("103_4xrst")]
+
+[node name="lid_large2" parent="." unique_id=1101998700 instance=ExtResource("104_3ppxc")]
+
+[node name="menu2" parent="." unique_id=1874172773 instance=ExtResource("105_ngrok")]
+
+[node name="mustard2" parent="." unique_id=1610190400 instance=ExtResource("106_qi4r7")]
+
+[node name="oven2" parent="." unique_id=130599493 instance=ExtResource("107_hntc5")]
+
+[node name="pan_0062" parent="." unique_id=567684948 instance=ExtResource("108_l57cn")]
+
+[node name="pan_A2" parent="." unique_id=1846675369 instance=ExtResource("109_dtajh")]
+
+[node name="pan_B2" parent="." unique_id=1390248501 instance=ExtResource("110_a4pnx")]
+
+[node name="papertowel2" parent="." unique_id=209276293 instance=ExtResource("111_hmvj4")]
+
+[node name="pillar_A2" parent="." unique_id=2066124288 instance=ExtResource("112_jp883")]
+
+[node name="pillar_B2" parent="." unique_id=1068483516 instance=ExtResource("113_bgcj0")]
+
+[node name="plate2" parent="." unique_id=1864035848 instance=ExtResource("114_wdt7e")]
+
+[node name="plate_dirty2" parent="." unique_id=1861717307 instance=ExtResource("115_8e31k")]
+
+[node name="plate_small2" parent="." unique_id=311026976 instance=ExtResource("116_yhprr")]
+
+[node name="pot_A2" parent="." unique_id=2022883073 instance=ExtResource("117_7npd5")]
+
+[node name="pot_A_stew2" parent="." unique_id=563015858 instance=ExtResource("118_r1np1")]
+
+[node name="pot_B2" parent="." unique_id=74213325 instance=ExtResource("119_cso1j")]
+
+[node name="pot_B_stew2" parent="." unique_id=1774431631 instance=ExtResource("120_ra1l4")]
+
+[node name="pot_large2" parent="." unique_id=486061948 instance=ExtResource("121_wvc7a")]
+
+[node name="shelf_papertowel2" parent="." unique_id=1105180250 instance=ExtResource("122_cpom4")]
+
+[node name="shelf_papertowel_decorated2" parent="." unique_id=63835564 instance=ExtResource("123_nu13u")]
+
+[node name="stew_bowl2" parent="." unique_id=1391901318 instance=ExtResource("124_ij4pl")]
+
+[node name="stew_pot2" parent="." unique_id=721701535 instance=ExtResource("125_pc73o")]
+
+[node name="stove_multi2" parent="." unique_id=1178260838 instance=ExtResource("126_wmfev")]
+
+[node name="stove_multi_countertop2" parent="." unique_id=200588187 instance=ExtResource("127_57wir")]
+
+[node name="stove_multi_decorated2" parent="." unique_id=781084709 instance=ExtResource("128_a0n21")]
+
+[node name="stove_single2" parent="." unique_id=1949903664 instance=ExtResource("129_epycy")]
+
+[node name="stove_single_countertop2" parent="." unique_id=72585932 instance=ExtResource("130_vrrs5")]
+
+[node name="table_round_A2" parent="." unique_id=796320818 instance=ExtResource("131_2efxw")]
+
+[node name="table_round_A_decorated2" parent="." unique_id=1243160550 instance=ExtResource("132_a5g1w")]
+
+[node name="table_round_A_small2" parent="." unique_id=1263534486 instance=ExtResource("133_owetg")]
+
+[node name="table_round_A_small_decorated2" parent="." unique_id=156559163 instance=ExtResource("134_k8y67")]
+
+[node name="table_round_B2" parent="." unique_id=1552652096 instance=ExtResource("135_lq7f7")]
+
+[node name="towelrail2" parent="." unique_id=347877583 instance=ExtResource("136_8lfcj")]
+
+[node name="wall2" parent="." unique_id=49680692 instance=ExtResource("137_w34ng")]
+
+[node name="wall_decorated2" parent="." unique_id=180028421 instance=ExtResource("138_8iutn")]
+
+[node name="wall_doorway2" parent="." unique_id=589361261 instance=ExtResource("139_qoawt")]
+
+[node name="wall_half2" parent="." unique_id=579431979 instance=ExtResource("140_btn0r")]
+
+[node name="wall_orderwindow2" parent="." unique_id=853260511 instance=ExtResource("141_w5o74")]
+
+[node name="wall_orderwindow_decorated2" parent="." unique_id=1032612276 instance=ExtResource("142_q0vgf")]
+
+[node name="wall_window_closed2" parent="." unique_id=884361583 instance=ExtResource("143_smq5c")]
+
+[node name="wall_window_open2" parent="." unique_id=1182467335 instance=ExtResource("144_qvg0i")]
