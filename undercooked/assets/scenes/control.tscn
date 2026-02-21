@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cikef2qrlvsrk"]
+
+[ext_resource type="Script" uid="uid://d1n40iym13ok6" path="res://ui.gd" id="1_ayc1w"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ayc1w"]
+font_size = 72
+
+[node name="Control" type="Control" unique_id=1114359376]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 98.0
+offset_top = -6.0
+offset_right = 98.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ayc1w")
+
+[node name="round_timer" type="Timer" parent="." unique_id=902714081]
+wait_time = 300.0
+autostart = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1778320181]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 964.0
+offset_right = 2.0
+offset_bottom = -549.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="round_label" type="Label" parent="HBoxContainer" unique_id=1744311632]
+layout_mode = 2
+text = "timer"
+label_settings = SubResource("LabelSettings_ayc1w")
+horizontal_alignment = 2
+
+[node name="Orders" type="HBoxContainer" parent="." unique_id=1810772944]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
