@@ -1,11 +1,16 @@
-[gd_scene format=3 uid="uid://b8caucxueek11"]
 
 [ext_resource type="PackedScene" path="res://assets/scenes/barbarian.tscn" id="1_4g7pb"]
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
+<<<<<<< Updated upstream
 [ext_resource type="Environment" uid="uid://b8qokehsivgyt" path="res://assets/default_environment.tres" id="3_0ejtv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g7pb"]
 size = Vector3(20, 1, 20)
+=======
+[ext_resource type="PackedScene" uid="uid://k0ao8lvcmgug" path="res://assets/scenes/player.tscn" id="2_4g7pb"]
+[ext_resource type="PackedScene" uid="uid://cikef2qrlvsrk" path="res://assets/scenes/control.tscn" id="3_6khq1"]
+[ext_resource type="PackedScene" uid="uid://d0kbtlgi4l1be" path="res://assets/scenes/orderManager.tscn" id="4_lr0kx"]
+>>>>>>> Stashed changes
 
 [node name="level1" type="Node3D" unique_id=266848435]
 
@@ -42,8 +47,17 @@ data = {
 }
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1926584598]
+<<<<<<< Updated upstream
 transform = Transform3D(1, 0, 0, 0, 0.75011104, 0.66131186, 0, -0.66131186, 0.75011104, 0, 13.81, 14.635)
 environment = ExtResource("3_0ejtv")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=218071199]
 environment = ExtResource("3_0ejtv")
+=======
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 12.45, 0)
+
+[node name="Control" parent="." unique_id=1114359376 instance=ExtResource("3_6khq1")]
+
+[node name="Node3D" parent="." unique_id=173566492 instance=ExtResource("4_lr0kx")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 12.45, 0)
+>>>>>>> Stashed changes

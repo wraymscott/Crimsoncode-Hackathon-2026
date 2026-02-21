@@ -2,6 +2,13 @@
 
 [ext_resource type="Script" uid="uid://d1n40iym13ok6" path="res://ui.gd" id="1_ayc1w"]
 
+[sub_resource type="FontVariation" id="FontVariation_ayc1w"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pslky"]
+font = SubResource("FontVariation_ayc1w")
+font_size = 28
+font_color = Color(0, 0, 0, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_ayc1w"]
 font_size = 72
 
@@ -18,6 +25,29 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ayc1w")
 
+[node name="Order1Rect" type="ColorRect" parent="." unique_id=2104119953]
+custom_minimum_size = Vector2(150, 125)
+layout_mode = 0
+offset_left = -96.0
+offset_top = 7.0
+offset_right = -76.0
+offset_bottom = 27.0
+color = Color(0.93333334, 0.93333334, 0.8, 1)
+
+[node name="Order1" type="VBoxContainer" parent="Order1Rect" unique_id=356255386]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 5.0
+offset_right = 127.0
+offset_bottom = 89.0
+
+[node name="Order1Label" type="Label" parent="Order1Rect/Order1" unique_id=553142657]
+layout_mode = 2
+text = "Order 1
+"
+label_settings = SubResource("LabelSettings_pslky")
+horizontal_alignment = 1
+
 [node name="round_timer" type="Timer" parent="." unique_id=902714081]
 wait_time = 300.0
 autostart = true
@@ -27,8 +57,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 964.0
-offset_right = 2.0
+offset_left = 857.0
+offset_right = -99.0
 offset_bottom = -549.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -40,7 +70,98 @@ text = "timer"
 label_settings = SubResource("LabelSettings_ayc1w")
 horizontal_alignment = 2
 
-[node name="Orders" type="HBoxContainer" parent="." unique_id=1810772944]
+[node name="Order2Rect" type="ColorRect" parent="." unique_id=1867631809]
+custom_minimum_size = Vector2(150, 125)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 64.0
+offset_top = 7.0
+offset_right = 214.0
+offset_bottom = 132.0
+color = Color(0.93333334, 0.93333334, 0.8, 1)
+
+[node name="Order2" type="VBoxContainer" parent="Order2Rect" unique_id=151839601]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 5.0
+offset_right = 127.0
+offset_bottom = 128.0
+
+[node name="Order2Label" type="Label" parent="Order2Rect/Order2" unique_id=1687811865]
+layout_mode = 2
+text = "Order 2
+
+"
+label_settings = SubResource("LabelSettings_pslky")
+horizontal_alignment = 1
+
+[node name="Order3Rect" type="ColorRect" parent="." unique_id=1771661917]
+custom_minimum_size = Vector2(150, 125)
+layout_mode = 0
+offset_left = 224.0
+offset_top = 7.0
+offset_right = 374.0
+offset_bottom = 132.0
+color = Color(0.93333334, 0.93333334, 0.8, 1)
+
+[node name="Order3" type="VBoxContainer" parent="Order3Rect" unique_id=1967843718]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 5.0
+offset_right = 127.0
+offset_bottom = 128.0
+
+[node name="Order3Label" type="Label" parent="Order3Rect/Order3" unique_id=1915463880]
+layout_mode = 2
+text = "Order 3
+
+"
+label_settings = SubResource("LabelSettings_pslky")
+horizontal_alignment = 1
+
+[node name="Order4Rect" type="ColorRect" parent="." unique_id=873732282]
+custom_minimum_size = Vector2(150, 125)
+layout_mode = 0
+offset_left = 385.0
+offset_top = 7.0
+offset_right = 535.0
+offset_bottom = 132.0
+color = Color(0.93333334, 0.93333334, 0.8, 1)
+
+[node name="Order4" type="VBoxContainer" parent="Order4Rect" unique_id=1614270031]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 5.0
+offset_right = 127.0
+offset_bottom = 128.0
+
+[node name="Order4Label" type="Label" parent="Order4Rect/Order4" unique_id=1380464227]
+layout_mode = 2
+text = "Order 4
+
+"
+label_settings = SubResource("LabelSettings_pslky")
+horizontal_alignment = 1
+
+[node name="Order5Rect" type="ColorRect" parent="." unique_id=415503506]
+custom_minimum_size = Vector2(150, 125)
+layout_mode = 0
+offset_left = 545.0
+offset_top = 7.0
+offset_right = 695.0
+offset_bottom = 132.0
+color = Color(0.93333334, 0.93333334, 0.8, 1)
+
+[node name="Order5" type="VBoxContainer" parent="Order5Rect" unique_id=622879319]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 5.0
+offset_right = 127.0
+offset_bottom = 128.0
+
+[node name="Order5Label" type="Label" parent="Order5Rect/Order5" unique_id=1356982457]
+layout_mode = 2
+text = "Order 5
+
+"
+label_settings = SubResource("LabelSettings_pslky")
+horizontal_alignment = 1
