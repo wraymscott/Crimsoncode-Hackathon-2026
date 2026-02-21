@@ -1,17 +1,34 @@
 [gd_scene format=3 uid="uid://bfyirmbrtswgp"]
 
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
+[ext_resource type="PackedScene" uid="uid://k0ao8lvcmgug" path="res://assets/scenes/player.tscn" id="2_4g7pb"]
 
 [node name="level1" type="Node3D" unique_id=266848435]
 
 [node name="floor" type="GridMap" parent="." unique_id=1333999171]
 mesh_library = ExtResource("1_14qug")
 cell_size = Vector3(4, 2, 4)
+data = {
+"cells": PackedInt32Array(65535, 0, 23, 0, 0, 23, 65535, 65535, 23, 0, 65535, 23, 1, 65535, 23, 1, 0, 23, 1, 1, 23, 65534, 65535, 23, 65534, 0, 23, 65534, 1, 23, 65534, 65534, 23, 65535, 65534, 23, 1, 65534, 23, 0, 65534, 23, 2, 65534, 23, 2, 65535, 23, 2, 0, 23, 2, 1, 23, 65533, 65534, 23, 65533, 65535, 23, 65533, 0, 23, 65533, 1, 23, 65533, 65533, 23, 65534, 65533, 23, 0, 65533, 23, 65535, 65533, 23, 1, 65533, 23, 2, 65533, 23, 65533, 2, 23, 65534, 2, 23, 65535, 2, 23, 0, 2, 23, 1, 2, 23, 2, 2, 23, 65535, 1, 23, 0, 1, 23)
+}
 
-[node name="walls" type="GridMap" parent="." unique_id=1718793836]
+[node name="GridMap" type="GridMap" parent="." unique_id=1718793836]
 mesh_library = ExtResource("1_14qug")
 cell_size = Vector3(4, 2, 4)
+metadata/_editor_floor_ = Vector3(0, 1, 0)
 
 [node name="furniture" type="GridMap" parent="." unique_id=1474614493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh_library = ExtResource("1_14qug")
+cell_size = Vector3(4, 42.195, 4)
+data = {
+"cells": PackedInt32Array(2, 7, 327741, 10, 10, 327741, 65529, 65533, 327741)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="walls" type="GridMap" parent="." unique_id=43579108]
 mesh_library = ExtResource("1_14qug")
 cell_size = Vector3(4, 2, 4)
+
+[node name="CharacterBody3D" parent="." unique_id=2146720752 instance=ExtResource("2_4g7pb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4784517, 2.483487, -3.1546555)
