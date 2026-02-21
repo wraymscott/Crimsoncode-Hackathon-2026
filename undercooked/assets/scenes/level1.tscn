@@ -42,7 +42,7 @@ data = {
 }
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1926584598]
-transform = Transform3D(-4.371139e-08, 0.66131186, -0.75011104, 0, 0.75011104, 0.66131186, 1, 2.890686e-08, -3.2788396e-08, -13.973, 13.66, 0)
+transform = Transform3D(1, 0, 0, 0, 0.75011104, 0.66131186, 0, -0.66131186, 0.75011104, 0, 13.81, 14.635)
 environment = ExtResource("3_0ejtv")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=218071199]
