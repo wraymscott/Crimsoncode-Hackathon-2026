@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://d2ujp4tnsbpex"]
+[gd_scene format=3 uid="uid://bbqgmorvy80fq"]
 
 [ext_resource type="PackedScene" uid="uid://k0ao8lvcmgug" path="res://assets/scenes/player.tscn" id="1_hoyoc"]
 
@@ -16,3 +16,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10515809, 2.0833821, 0.298
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1902799195]
 transform = Transform3D(1, 0, 0, 0, 0.94422704, 0.32929516, 0, -0.32929516, 0.94422704, 0, 4.5833406, 5.284649)
+
+[node name="Timer" type="Timer" parent="." unique_id=503734317]
