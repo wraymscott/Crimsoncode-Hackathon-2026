@@ -17,6 +17,18 @@ mesh_library = ExtResource("1_14qug")
 cell_size = Vector3(4, 2, 4)
 metadata/_editor_floor_ = Vector3(0, 1, 0)
 
+<<<<<<< HEAD
+=======
+[node name="furniture" type="GridMap" parent="." unique_id=1474614493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+mesh_library = ExtResource("1_14qug")
+cell_size = Vector3(4, 4, 4)
+data = {
+"cells": PackedInt32Array(2, 7, 327741, 10, 10, 327741, 65529, 65533, 327741, 65526, 65529, 327741, 0, 0, 60)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+>>>>>>> bf75b9f84ac24aa96e8a86e1a0165ac7a0496e87
 [node name="walls" type="GridMap" parent="." unique_id=43579108]
 mesh_library = ExtResource("1_14qug")
 cell_size = Vector3(4, 2, 4)
