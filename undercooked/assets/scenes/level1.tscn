@@ -44,8 +44,8 @@ data = {
 "cells": PackedInt32Array(2, 65532, 655496, 1, 65532, 655496, 0, 65532, 655496, 65535, 65532, 655496, 65534, 65532, 655496, 65533, 65532, 655496, 65532, 65532, 655498)
 }
 
-[node name="stove_wall" type="GridMap" parent="." unique_id=130040143]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045, 0.5, 2.245)
+[node name="stove_wall" type="GridMap" parent="." unique_id=1608661941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045, 0.5, 25.69)
 mesh_library = ExtResource("1_14qug")
 cell_size = Vector3(4, 2, 4)
 data = {
@@ -55,9 +55,9 @@ data = {
 [node name="CharacterBody3D" parent="." unique_id=2146720752 instance=ExtResource("2_4g7pb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1393023, 2.2498977, -2.832386)
 
-[node name="appliances_Furniture" type="GridMap" parent="." unique_id=1269495490]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.73)
+[node name="Furn_on_app_wall" type="GridMap" parent="." unique_id=1269495490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.5, 0.73)
 mesh_library = ExtResource("1_14qug")
 data = {
-"cells": PackedInt32Array(5, 65535, 1441853, 5, 0, 1441878, 5, 1, 1441889, 5, 2, 1441878, 5, 3, 1441881, 1, 5, 655497)
+"cells": PackedInt32Array(5, 65535, 1441853, 5, 0, 1441878, 5, 1, 1441889, 5, 2, 1441878, 5, 3, 1441881)
 }
