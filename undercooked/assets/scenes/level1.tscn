@@ -4,6 +4,7 @@
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="Environment" uid="uid://b8qokehsivgyt" path="res://assets/default_environment.tres" id="3_0ejtv"]
 [ext_resource type="PackedScene" path="res://assets/scenes/control.tscn" id="3_6khq1"]
+[ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="3_xoos5"]
 [ext_resource type="PackedScene" path="res://assets/scenes/orderManager.tscn" id="4_lr0kx"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g7pb"]
@@ -33,8 +34,11 @@ cell_size = Vector3(4, 2, 4)
 metadata/_editor_floor_ = Vector3(0, 1, 0)
 
 [node name="walls" type="GridMap" parent="." unique_id=1019065666]
-mesh_library = ExtResource("1_14qug")
+mesh_library = ExtResource("3_xoos5")
 cell_size = Vector3(4, 2, 4)
+data = {
+"cells": PackedInt32Array(65533, 65533, 0, 65534, 65533, 0, 65535, 65533, 0, 0, 65533, 0, 1, 65533, 0, 2, 65533, 1441792, 2, 65534, 1441792, 2, 65532, 655360, 65532, 65533, 1441792, 65532, 65534, 1441792, 65532, 65535, 1441792, 65532, 0, 1441792, 65532, 1, 1441792, 65532, 2, 1441792, 65533, 2, 655360, 65534, 2, 655360, 65535, 2, 655360, 0, 2, 655360, 1, 2, 655360, 2, 2, 655360, 3, 2, 1048576, 3, 1, 1048576, 3, 0, 1048576, 3, 65534, 1048576, 3, 65535, 1048576)
+}
 
 [node name="appliances_Furniture" type="GridMap" parent="." unique_id=531716386]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.73)
