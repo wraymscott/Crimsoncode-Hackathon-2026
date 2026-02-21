@@ -16,11 +16,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10515809, 2.0833821, 0.298
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1902799195]
 transform = Transform3D(1, 0, 0, 0, 0.94422704, 0.32929516, 0, -0.32929516, 0.94422704, 0, 4.5833406, 5.284649)
-
-[node name="Timer" type="Timer" parent="." unique_id=503734317]
-wait_time = 300.0
-autostart = true
-
-[node name="Label" type="Label" parent="Timer" unique_id=964425274]
-offset_right = 40.0
-offset_bottom = 23.0
