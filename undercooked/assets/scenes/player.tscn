@@ -7,6 +7,8 @@
 radius = 0.6738281
 height = 2.5410156
 
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_s027a"]
+
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=2146720752]
 script = ExtResource("1_s027a")
 
@@ -17,3 +19,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2280042, 0)
 shape = SubResource("CapsuleShape3D_14505")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1883836326]
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=1779719909]
+tree_root = SubResource("AnimationNodeStateMachine_s027a")
+anim_player = NodePath("../AnimationPlayer")
