@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bfyirmbrtswgp"]
+[gd_scene format=3 uid="uid://b8caucxueek11"]
 
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="PackedScene" uid="uid://k0ao8lvcmgug" path="res://assets/scenes/player.tscn" id="2_4g7pb"]
@@ -17,18 +17,19 @@ mesh_library = ExtResource("1_14qug")
 cell_size = Vector3(4, 2, 4)
 metadata/_editor_floor_ = Vector3(0, 1, 0)
 
-[node name="furniture" type="GridMap" parent="." unique_id=1474614493]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-mesh_library = ExtResource("1_14qug")
-cell_size = Vector3(4, 4, 4)
-data = {
-"cells": PackedInt32Array(2, 7, 327741, 10, 10, 327741, 65529, 65533, 327741, 65526, 65529, 327741, 0, 0, 60)
-}
-metadata/_editor_floor_ = Vector3(0, 0, 0)
-
 [node name="walls" type="GridMap" parent="." unique_id=43579108]
 mesh_library = ExtResource("1_14qug")
 cell_size = Vector3(4, 2, 4)
 
 [node name="CharacterBody3D" parent="." unique_id=2146720752 instance=ExtResource("2_4g7pb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4784517, 2.483487, -3.1546555)
+
+[node name="appliances_Furniture" type="GridMap" parent="." unique_id=1269495490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.73)
+mesh_library = ExtResource("1_14qug")
+data = {
+"cells": PackedInt32Array(26, 65522, 1441853, 5, 65535, 1441853, 5, 0, 1441878, 5, 1, 1441889, 5, 2, 1441878, 5, 3, 1441881, 1, 65530, 137, 65530, 65535, 1441933, 1, 5, 655497)
+}
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1926584598]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 12.45, 0)
