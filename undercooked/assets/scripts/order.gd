@@ -7,6 +7,8 @@ extends Control
 @onready var ingredient2 = $result/VBoxContainer/HBoxContainer/img2
 @onready var ingredient3 = $result/VBoxContainer/HBoxContainer/img3
 
+@onready var audio_maker = $AudioStreamPlayer
+
 @export var min_time = 60
 @export var max_time = 90
 

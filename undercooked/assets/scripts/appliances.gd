@@ -6,6 +6,7 @@ extends Node3D
 @onready var sound_maker = $AudioStreamPlayer3D
 
 @export var cook_time_seconds = 10
+@export var stun_player = false
 
 @export var number_of_ingredients = 3
 @export var multiple_uses = false
@@ -17,8 +18,6 @@ extends Node3D
 
 @export var resulting_item : PackedScene
 @export var resulting_item2 : PackedScene # The second possible result
-
-@export var stun_player_seconds = 0.0
 
 var current_result : PackedScene # Tracks which item to spawn at the end
 var ingredient1_fulfilled = false
@@ -115,7 +114,8 @@ func gather_ingredients():
 					ingredient1_fulfilled = true
 
 func food_start_cook():
-	character_node.stop_player(cook_time_seconds)
+	if stun_player:
+		character_node.stop_player(cook_time_seconds)
 	is_cooking = true
 	cook_timer.start(cook_time_seconds)
 	if sound_effect != null:
