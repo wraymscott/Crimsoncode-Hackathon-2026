@@ -588,14 +588,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.965, 1.5, -1.05)
 mesh_library = ExtResource("1_atu81")
 
 [node name="mustards_backwall" type="GridMap" parent="." unique_id=1650747449]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.965, 1.5, -1.05)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.965, 1.5, -0.67)
 mesh_library = ExtResource("1_atu81")
 data = {
 "cells": PackedInt32Array(4, 0, 71, 4, 65533, 105, 4, 3, 105)
 }
 
 [node name="ketchup" type="GridMap" parent="." unique_id=2021944251]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.965, 1.5, -1.37)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.965, 1.5, -1.28)
 mesh_library = ExtResource("1_atu81")
 data = {
 "cells": PackedInt32Array(4, 0, 71, 4, 65533, 75, 4, 3, 75)
@@ -637,7 +637,7 @@ data = {
 }
 
 [node name="menu" type="GridMap" parent="." unique_id=705770403]
-transform = Transform3D(0.7289686, 0, -0.6845471, 0, 1, 0, 0.6845471, 0, 0.7289686, 3.65, 1.88, 7.48)
+transform = Transform3D(0.7289686, 0, -0.6845471, 0, 1, 0, 0.6845471, 0, 0.7289686, 3.65, 1.71, 7.48)
 mesh_library = ExtResource("1_atu81")
 data = {
 "cells": PackedInt32Array(65530, 3, 655464)
