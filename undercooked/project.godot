@@ -15,10 +15,6 @@ run/main_scene="uid://bd3p3dk6wapf"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
-[display]
-
-window/size/mode=3
-
 [input]
 
 player_right0={
