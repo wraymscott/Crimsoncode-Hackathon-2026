@@ -20,7 +20,6 @@ func _physics_process(delta):
 			var character = body
 			var instanced_item =  contains_item.instantiate()
 			character.pick_up_item(instanced_item)
-			print("test")
 		if body.is_in_group("player") and Input.get_action_raw_strength("player_interact1"):
 			var character = body
 			var instanced_item =  contains_item.instantiate()
