@@ -5,6 +5,8 @@ extends CharacterBody3D
 @onready var state_machine = animation_tree["parameters/playback"]
 @onready var pickup_reach := $pickup_reach
 
+@onready var stun_timer = $stun_timer
+
 @onready var footsteps = $Footsteps
 
 @export var player_id = 0;
@@ -22,9 +24,9 @@ func _physics_process(delta: float) -> void:
 #
 	var input_dir := Vector2.ZERO
 	
-	if player_id == 0:
+	if player_id == 0 and stun_timer.time_left == 0:
 		input_dir = Input.get_vector("player_left0", "player_right0", "player_up0", "player_down0")
-	elif player_id == 1:
+	elif player_id == 1 and stun_timer.time_left == 0:
 		input_dir = Input.get_vector("player_left1", "player_right1", "player_up1", "player_down1")
 
 		
@@ -53,8 +55,6 @@ func _physics_process(delta: float) -> void:
 	#if Input.is_action_just_pressed("player_drop_item0"):
 		#drop_item()
 
-
-
 func detect_floor_item():
 	var bodies = pickup_reach.get_overlapping_bodies()
 	for body in bodies:
@@ -80,7 +80,7 @@ func pick_up_item(item_node):
 		item_node.global_transform.origin = hand_attachment_node.global_transform.origin
 		# ... other transform adjustments
 		
-		#$Pickup_Ingredient.play()
+		$Pickup_Ingredient.play()
 		
 		is_holding = true
 		
@@ -90,7 +90,6 @@ func get_item_name():
 	if hand_attachment_node and hand_attachment_node.get_child_count() > 0:
 		return hand_attachment_node.get_child(0).name
 	return "No child found"
-	
 	
 func kill_item():
 	if is_holding:
@@ -113,3 +112,6 @@ func drop_item():
 		# 3. Teleport the item to the drop position
 		item.global_position = drop_pos
 		is_holding = false
+
+func stun_player(seconds):
+	stun_timer.start(seconds)

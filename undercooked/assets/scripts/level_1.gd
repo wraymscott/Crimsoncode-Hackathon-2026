@@ -4,8 +4,13 @@ extends Node3D
 @onready var music_intro_audiostream = $Audiostreams/Music_Intro
 @onready var music_audiostream = $Audiostreams/Music
 
+@onready var player1 = $player1
+@onready var player2 = $player2
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	player1.stun_player(3)
+	player2.stun_player(3)
 	countdown_audiostream.play()
 	await get_tree().create_timer(1.125).timeout
 	await get_tree().create_timer(1).timeout
