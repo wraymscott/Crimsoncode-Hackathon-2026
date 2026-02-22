@@ -6,14 +6,11 @@
 [ext_resource type="PackedScene" path="res://assets/scenes/container.tscn" id="3_0ejtv"]
 [ext_resource type="PackedScene" uid="uid://dm5ir1ixckmnv" path="res://assets/scenes/items/lettuce.tscn" id="4_6khq1"]
 [ext_resource type="PackedScene" uid="uid://d2htr6qs5e8nq" path="res://assets/scenes/items/food_ingredient_bun_2.tscn" id="6_4aev3"]
-[ext_resource type="PackedScene" path="res://assets/scenes/items/food_ingredient_carrot_chopped_2.tscn" id="7_f0uwh"]
-[ext_resource type="PackedScene" uid="uid://c3hxr7d2tieiv" uid="uid://b1bo50g3nrqqm" path="res://assets/scenes/items/food_ingredient_burger_cooked_2.tscn" id="8_kbvyv"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_4aev3"]
-size = Vector3(46.210823, 9.364898, 27.091686)
+[ext_resource type="PackedScene" uid="uid://w7s2e72oh2x5" path="res://assets/scenes/items/food_ingredient_carrot_chopped_2.tscn" id="7_f0uwh"]
+[ext_resource type="PackedScene" uid="uid://b1bo50g3nrqqm" path="res://assets/scenes/items/food_ingredient_burger_cooked_2.tscn" id="8_kbvyv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g7pb"]
-size = Vector3(4.081459, 2.5931165, 4.2063227)
+size = Vector3(4.081459, 4.7046394, 4.2063227)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f0uwh"]
 size = Vector3(31.180897, 8.664722, 1.7331932)
@@ -33,8 +30,8 @@ size = Vector3(2.258192, 8.664722, 12.16226)
 [sub_resource type="BoxShape3D" id="BoxShape3D_y1mtp"]
 size = Vector3(0.9544406, 10.094568, 1.0627325)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_5o48e"]
-size = Vector3(3.2895565, 10.022992, 28.95651)
+[sub_resource type="BoxShape3D" id="BoxShape3D_4aev3"]
+size = Vector3(34.90448, 1.6890976, 28.95651)
 
 [node name="level1" type="Node3D" unique_id=266848435]
 
@@ -203,10 +200,14 @@ visible = false
 contains_item = ExtResource("8_kbvyv")
 
 [node name="collision_list" type="Node3D" parent="." unique_id=1057681894]
+visible = false
 
-[node name="StaticBody3D" type="StaticBody3D" parent="collision_list" unique_id=1790463381]
+[node name="crate collision" type="StaticBody3D" parent="collision_list" unique_id=1790463381]
+visible = false
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="collision_list/StaticBody3D" unique_id=1800511958]
+[node name="crate" type="CollisionShape3D" parent="collision_list/crate collision" unique_id=1800511958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0557613, 0)
+visible = false
 shape = SubResource("BoxShape3D_4g7pb")
 
 [node name="right wall collision" type="StaticBody3D" parent="collision_list" unique_id=1012682410]
@@ -214,12 +215,15 @@ visible = false
 
 [node name="fc" type="CollisionShape3D" parent="collision_list/right wall collision" unique_id=1159573653]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6524339, 4.1734924, 12.254608)
+visible = false
 shape = SubResource("BoxShape3D_f0uwh")
 
 [node name="Right counter collision" type="StaticBody3D" parent="collision_list" unique_id=1765622662]
+visible = false
 
 [node name="fc" type="CollisionShape3D" parent="collision_list/Right counter collision" unique_id=387154003]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.3079805, 4.211212, 10.885707)
+visible = false
 shape = SubResource("BoxShape3D_uki8p")
 
 [node name="Left counter collision" type="StaticBody3D" parent="collision_list" unique_id=1805400292]
@@ -254,13 +258,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.988533, 4.926135, 4.95612
 visible = false
 shape = SubResource("BoxShape3D_y1mtp")
 
-[node name="front wall collision" type="StaticBody3D" parent="collision_list" unique_id=1619511197]
+[node name="floor collision" type="StaticBody3D" parent="collision_list" unique_id=840997088]
 visible = false
 
-[node name="fc" type="CollisionShape3D" parent="collision_list/front wall collision" unique_id=1729556798]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.15268, 4.890347, 1.466085)
+[node name="fc" type="CollisionShape3D" parent="collision_list/floor collision" unique_id=943339902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3452187, 0.7234, 1.466085)
 visible = false
-shape = SubResource("BoxShape3D_5o48e")
+shape = SubResource("BoxShape3D_4aev3")
 
 [editable path="containers/lettuce_container"]
 [editable path="containers/bun_container"]
