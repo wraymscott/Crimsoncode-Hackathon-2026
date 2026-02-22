@@ -24,11 +24,11 @@ layout_mode = 2
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=892978106]
 layout_mode = 2
 
-[node name="ing1" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=1878565655]
+[node name="img1" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=1878565655]
 layout_mode = 2
 
-[node name="ing2" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=1791137743]
+[node name="img2" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=1791137743]
 layout_mode = 2
 
-[node name="ing3" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=253245843]
+[node name="img3" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=253245843]
 layout_mode = 2
