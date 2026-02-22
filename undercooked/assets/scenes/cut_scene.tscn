@@ -2,6 +2,7 @@
 
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_atu81"]
 [ext_resource type="Script" uid="uid://dbfl1ww4hx2ug" path="res://assets/scripts/cut_scene.gd" id="1_ogq5s"]
+[ext_resource type="Texture2D" uid="uid://cbtgbtdwj0yqv" path="res://assets/images/imgs/IMG_1468.png" id="2_3lqgc"]
 [ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="2_ogq5s"]
 
 [sub_resource type="Animation" id="Animation_3lqgc"]
@@ -73,6 +74,39 @@ tracks/5/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.8333334, 0, 0, 0, 0, -0.9290382, 0, 0, 0, 0, -1.9542952, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.50376767, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.39453125, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.3416087, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.2893092, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.9367263, 0, 0, 0),
 "times": PackedFloat32Array(10, 12.7, 18.27423, 22.333334, 25.166666, 29.633333, 32.633335, 35.000523, 37.766666, 39.7, 41.133335, 42.86919, 44.566666, 50.187023)
 }
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D:scale:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0),
+"times": PackedFloat32Array(0, 1.4666667, 2.5, 3.8666666, 5.133333, 6.5666666, 8.066667, 9.533334, 11.3, 12.5, 13.933333, 15.6, 17.101635, 18.3, 19.668303, 20.866667, 22.03497, 23.233334, 24.501637, 25.7, 26.434969, 27.633333, 29.13497, 30.333334, 31.901634, 33.1, 34.1683, 35.366665, 36.568302, 37.766666, 39.068302, 40.266666, 41.8683, 43.066666, 44.468304, 45.666668, 47.101635, 48.3, 49.8, 50.998363, 53.001637, 54.2, 55.8683, 57.066666)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D:scale:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0),
+"times": PackedFloat32Array(0, 1.4666667, 2.5, 3.8666666, 5.133333, 6.5666666, 8.066667, 9.533334, 11.3, 12.5, 13.933333, 15.6, 17.101635, 18.3, 19.668303, 20.866667, 22.03497, 23.233334, 24.501637, 25.7, 26.434969, 27.633333, 29.13497, 30.333334, 31.901634, 33.1, 34.1683, 35.366665, 36.568302, 37.766666, 39.068302, 40.266666, 41.8683, 43.066666, 44.468304, 45.666668, 47.101635, 48.3, 49.8, 50.998363, 53.001637, 54.2, 55.8683, 57.066666)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D:scale:z")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0),
+"times": PackedFloat32Array(0, 1.4666667, 2.5, 3.8666666, 5.133333, 6.5666666, 8.066667, 9.533334, 11.3, 12.5, 13.933333, 15.6, 17.101635, 18.3, 19.668303, 20.866667, 22.03497, 23.233334, 24.501637, 25.7, 26.434969, 27.633333, 29.13497, 30.333334, 31.901634, 33.1, 34.1683, 35.366665, 36.568302, 37.766666, 39.068302, 40.266666, 41.8683, 43.066666, 44.468304, 45.666668, 47.101635, 48.3, 49.8, 50.998363, 53.001637, 54.2, 55.8683, 57.066666)
+}
 
 [sub_resource type="Animation" id="Animation_1h712"]
 length = 0.001
@@ -142,12 +176,52 @@ tracks/5/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D:scale:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.31, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D:scale:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.31, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D:scale:z")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.31, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_odmne"]
 _data = {
 &"Chapter_1": SubResource("Animation_3lqgc"),
 &"RESET": SubResource("Animation_1h712")
 }
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3lqgc"]
+transparency = 1
+albedo_texture = ExtResource("2_3lqgc")
+
+[sub_resource type="QuadMesh" id="QuadMesh_1h712"]
+material = SubResource("StandardMaterial3D_3lqgc")
 
 [sub_resource type="Environment" id="Environment_yoxea"]
 background_mode = 1
@@ -166,6 +240,19 @@ libraries/ = SubResource("AnimationLibrary_odmne")
 
 [node name="Camera3D" type="Camera3D" parent="AnimationPlayer" unique_id=1282242095]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.213338, 3.3844166, 5.94605)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="AnimationPlayer/Camera3D" unique_id=1388054589]
+transform = Transform3D(1.31, 0, 0, 0, 1.31, 0, 0, 0, 1.31, -0.465, -0.3, -0.805)
+mesh = SubResource("QuadMesh_1h712")
+
+[node name="SubViewport" type="SubViewport" parent="AnimationPlayer/Camera3D/MeshInstance3D" unique_id=121039514]
+transparent_bg = true
+
+[node name="TextureRect" type="TextureRect" parent="AnimationPlayer/Camera3D/MeshInstance3D/SubViewport" unique_id=1483996504]
+offset_right = 2732.0
+offset_bottom = 2048.0
+scale = Vector2(0.135, 0.135)
+texture = ExtResource("2_3lqgc")
 
 [node name="floor" type="GridMap" parent="." unique_id=2128944956]
 mesh_library = ExtResource("1_atu81")
@@ -437,5 +524,15 @@ mesh_library = ExtResource("2_ogq5s")
 wait_time = 60.0
 one_shot = true
 autostart = true
+
+[node name="Control" type="Control" parent="." unique_id=331757225]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="prompts" type="Node3D" parent="." unique_id=1704327993]
 
 [connection signal="timeout" from="scene_switch" to="." method="_on_scene_switch_timeout"]
