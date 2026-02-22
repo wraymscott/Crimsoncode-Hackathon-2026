@@ -1,8 +1,5 @@
 extends Node3D
 
-@onready var order_timer = $order_timer
-@onready var order_container = $gui/VBoxContainer/HBoxContainer
-
 @export var order_scene: PackedScene 
 
 

@@ -2,6 +2,8 @@
 
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="PackedScene" uid="uid://kmgxq0gr3hw6" path="res://assets/scenes/barbarian.tscn" id="2_4g7pb"]
+[ext_resource type="PackedScene" uid="uid://dba682rmrle2v" path="res://assets/scenes/container.tscn" id="3_0ejtv"]
+[ext_resource type="PackedScene" uid="uid://dm5ir1ixckmnv" path="res://assets/scenes/items/lettuce.tscn" id="4_6khq1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g7pb"]
 size = Vector3(20, 3, 20)
@@ -30,6 +32,7 @@ cell_size = Vector3(4, 2, 4)
 data = {
 "cells": PackedInt32Array(3, 65533, 1441928, 3, 65534, 1441928, 3, 0, 1441928, 3, 65535, 1441928, 3, 2, 1441928, 3, 1, 1441928)
 }
+metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="Fridge_wall_opp" type="GridMap" parent="." unique_id=789960320]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.805, 0.58, 0)
@@ -139,3 +142,12 @@ player_id = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1800511958]
 shape = SubResource("BoxShape3D_4g7pb")
+
+[node name="container" parent="." unique_id=581810913 instance=ExtResource("3_0ejtv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6738122, 2.6262977, -0.67444134)
+contains_item = ExtResource("4_6khq1")
+
+[node name="pick_up_box" parent="container/Area3D" parent_id_path=PackedInt32Array(581810913, 2059051693) index="0" unique_id=1072688316]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4198809, 0, 0)
+
+[editable path="container"]
