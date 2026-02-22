@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://kmgxq0gr3hw6"]
 
 [ext_resource type="Script" uid="uid://cykpww3iuqomf" path="res://assets/scripts/player_controller.gd" id="1_vdydb"]
-[ext_resource type="Texture2D" uid="uid://ct23q8v2ukgtc" path="res://assets/images/imgs/star.jpg" id="2_g48q3"]
+[ext_resource type="Texture2D" uid="uid://dx7ucetnoqx17" path="res://assets/images/imgs/Sprite-0001.png" id="2_g48q3"]
 [ext_resource type="Texture2D" uid="uid://dslk3yturuex7" path="res://assets/models/player/Barbarian_barbarian_texture.png" id="2_r810p"]
 [ext_resource type="Animation" uid="uid://ij2vqgy2xyiu" path="res://assets/animations/player_animations/Idle_A.res" id="2_vdydb"]
 [ext_resource type="Animation" uid="uid://d212m8gjd4fvj" path="res://assets/animations/player_animations/Hit_A.res" id="3_gyc38"]
@@ -19,6 +19,7 @@
 [ext_resource type="Animation" uid="uid://pq140msrkp4i" path="res://assets/animations/player_animations/PickUp.res" id="11_lhed7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8pg1n"]
+transparency = 1
 albedo_texture = ExtResource("2_g48q3")
 billboard_mode = 1
 billboard_keep_scale = true
@@ -330,15 +331,14 @@ script = ExtResource("1_vdydb")
 
 [node name="dizzy_stars" type="CPUParticles3D" parent="." unique_id=449605052]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 2.5169873, 0)
-emitting = false
 mesh = SubResource("QuadMesh_6iogv")
 gravity = Vector3(0, 0, 0)
 initial_velocity_min = 1.0
 initial_velocity_max = 1.0
 angular_velocity_min = -54.34
 angular_velocity_max = -13.58
-scale_amount_min = 0.1
-scale_amount_max = 0.2
+scale_amount_min = 0.0
+scale_amount_max = 3.0
 
 [node name="Barbarian" type="Node3D" parent="." unique_id=1210827197]
 
