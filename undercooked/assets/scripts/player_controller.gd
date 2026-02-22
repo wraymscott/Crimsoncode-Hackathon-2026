@@ -6,6 +6,7 @@ extends CharacterBody3D
 @onready var pickup_reach := $pickup_reach
 @onready var star_emmiter = $dizzy_stars
 
+@onready var punch_box = $punch_reach
 
 @onready var stun_timer = $stun_timer
 
@@ -26,10 +27,6 @@ func _physics_process(delta: float) -> void:
 #
 	var input_dir := Vector2.ZERO
 	
-		
-	if Input.is_action_just_pressed("player_attack1") and player_id == 0:
-		state_machine.travel("stab")
-		
 	
 	if player_id == 0 and stun_timer.time_left == 0:
 		input_dir = Input.get_vector("player_left0", "player_right0", "player_up0", "player_down0")
@@ -61,12 +58,13 @@ func _physics_process(delta: float) -> void:
 		kill_item()
 	if Input.get_action_raw_strength("clear_item1") and player_id == 1:
 		kill_item()
+		
+	if Input.is_action_just_pressed("player_attack0") and player_id == 0:
+		state_machine.travel("stab")
+		punch()
 
 	move_and_slide()
 	
-	#if Input.is_action_just_pressed("player_drop_item0"):
-		#drop_item()
-
 func detect_floor_item():
 	var bodies = pickup_reach.get_overlapping_bodies()
 	for body in bodies:
@@ -130,6 +128,16 @@ func stun_player(seconds):
 	star_emmiter.emitting = true
 	stun_timer.start(seconds)
 
+func punch():
+	var bodies = punch_box.get_overlapping_bodies()
+	for body in bodies:
+		if body.is_in_group("player") and (body.player_id != player_id):
+			body.hit()
+
+func hit():
+	stun_player(2)
+	state_machine.travel("hit")
+	
 
 func _on_stun_timer_timeout() -> void:
 	star_emmiter.emitting = false

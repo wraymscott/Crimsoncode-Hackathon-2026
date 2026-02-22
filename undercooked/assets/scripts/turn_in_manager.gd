@@ -6,7 +6,6 @@ extends Node3D
 @onready var player1_label = $"../HBoxContainer/VBoxContainer/player1_score"
 @onready var player2_label = $"../HBoxContainer/VBoxContainer/player2_score"
 
-
 @onready var audio = $AudioStreamPlayer3D
 
 var player1_money = 0

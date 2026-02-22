@@ -1,0 +1,432 @@
+[gd_scene format=3 uid="uid://bd3p3dk6wapf"]
+
+[ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_atu81"]
+[ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="2_ogq5s"]
+
+[sub_resource type="Animation" id="Animation_3lqgc"]
+resource_name = "Chapter_1"
+length = 30.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Camera3D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0),
+"points": PackedFloat32Array(-7.213338, -0.25, 0, 0.25, 0, -7.213338, -1.6666667, 0, 0, 0, 0, -0.8333334, -1.2022231, 0, 0),
+"times": PackedFloat32Array(0, 10, 12.633333)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Camera3D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0),
+"points": PackedFloat32Array(3.3844166, -0.25, 0, 0.25, 0, 3.3844166, -1.6666667, 0, 0, 0, 4.569, -0.8333334, -0.19743054, 0, 0),
+"times": PackedFloat32Array(0, 10, 12.7)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/Camera3D:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0),
+"points": PackedFloat32Array(5.94605, -0.25, 0, 0.25, 0, 5.94605, -1.6666667, 0, 0, 0, 5.946, -0.8333334, 8.34465e-06, 0, 0),
+"times": PackedFloat32Array(0, 10, 12.7)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/Camera3D:rotation:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.5375614, -0.8333334, 0.089593574, 0, 0),
+"times": PackedFloat32Array(10, 12.7)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/Camera3D:rotation:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1.5707964, -0.25, 0, 0.25, 0, 0, -0.8333334, 0.2617994, 0, 0),
+"times": PackedFloat32Array(10, 12.7)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Camera3D:rotation:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.8333334, 0, 0, 0),
+"times": PackedFloat32Array(10, 12.7)
+}
+
+[sub_resource type="Animation" id="Animation_1h712"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Camera3D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-7.213338, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Camera3D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(3.3844166, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/Camera3D:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(5.94605, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/Camera3D:rotation:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/Camera3D:rotation:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.5707964, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Camera3D:rotation:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_odmne"]
+_data = {
+&"Chapter_1": SubResource("Animation_3lqgc"),
+&"RESET": SubResource("Animation_1h712")
+}
+
+[sub_resource type="Environment" id="Environment_yoxea"]
+background_mode = 1
+background_color = Color(0.99215686, 0.84313726, 0.827451, 1)
+ssr_enabled = true
+ssr_max_steps = 32
+ssr_fade_in = 0.24367559
+ssao_enabled = true
+ssil_enabled = true
+
+[node name="CutScene" type="Node3D" unique_id=1784432631]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=728418148]
+libraries/ = SubResource("AnimationLibrary_odmne")
+
+[node name="Camera3D" type="Camera3D" parent="AnimationPlayer" unique_id=1282242095]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.213338, 3.3844166, 5.94605)
+
+[node name="floor" type="GridMap" parent="." unique_id=2128944956]
+mesh_library = ExtResource("1_atu81")
+cell_size = Vector3(4, 2, 4)
+data = {
+"cells": PackedInt32Array(65535, 0, 23, 0, 0, 23, 1, 65535, 23, 1, 0, 23, 1, 1, 23, 65534, 65535, 23, 65534, 0, 23, 65534, 1, 23, 2, 65534, 23, 2, 65535, 23, 2, 0, 23, 2, 1, 23, 65533, 65534, 23, 65533, 1, 23, 65533, 65533, 23, 65534, 65533, 23, 0, 65533, 23, 65535, 65533, 23, 1, 65533, 23, 65533, 2, 23, 65534, 2, 23, 65535, 2, 23, 0, 2, 23, 1, 2, 23, 2, 2, 23, 65535, 1, 23, 0, 1, 23, 65533, 0, 23, 65533, 65535, 23, 65534, 65534, 23, 1, 65534, 23, 2, 65533, 23, 65535, 65535, 23, 0, 65535, 23, 0, 65534, 23, 65535, 65534, 23)
+}
+
+[node name="GridMap" type="GridMap" parent="." unique_id=2097609527]
+mesh_library = ExtResource("1_atu81")
+cell_size = Vector3(4, 1, 4)
+data = {
+"cells": PackedInt32Array(131068, 65533, 1179671, 131068, 65534, 1179671, 131068, 0, 1179671, 131068, 1, 1179671, 131068, 2, 1179671, 131068, 65535, 1179671)
+}
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="Fridge_wall(A)" type="GridMap" parent="." unique_id=1477041625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2, 0.5, 0)
+mesh_library = ExtResource("1_atu81")
+cell_size = Vector3(4, 2, 4)
+data = {
+"cells": PackedInt32Array(3, 65533, 1441928, 3, 65534, 1441928, 3, 0, 1441928, 3, 65535, 1441928, 3, 2, 1441928, 3, 1, 1441928)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Fridge_wall_opp" type="GridMap" parent="." unique_id=1199111067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.805, 0.58, 0)
+mesh_library = ExtResource("1_atu81")
+cell_size = Vector3(4, 2, 4)
+data = {
+"cells": PackedInt32Array(3, 65533, 1441928, 3, 65534, 1441928, 3, 65535, 1441928, 3, 0, 1441928, 3, 1, 1441928, 3, 2, 1441928, 6, 65534, 1179724)
+}
+
+[node name="Door_wall" type="GridMap" parent="." unique_id=1303565996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045, 0.5, 2.245)
+mesh_library = ExtResource("1_atu81")
+cell_size = Vector3(4, 2, 4)
+data = {
+"cells": PackedInt32Array(2, 65532, 655496, 1, 65532, 655496, 65532, 65532, 655498, 65533, 65532, 655496, 65534, 65532, 655496, 65535, 65532, 655496, 0, 65532, 655496)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="stove_wall" type="GridMap" parent="." unique_id=690726762]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045, 0.5, 25.69)
+mesh_library = ExtResource("1_atu81")
+cell_size = Vector3(4, 2, 4)
+data = {
+"cells": PackedInt32Array(2, 65532, 655496, 1, 65532, 655496, 0, 65532, 655496, 65535, 65532, 655496, 65534, 65532, 655496, 65533, 65532, 655496, 65532, 65532, 655498)
+}
+
+[node name="Wall_A_counters_y_stove" type="GridMap" parent="." unique_id=50198717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.5, 1.5)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(5, 4, 1441873, 5, 3, 1441879, 5, 2, 1441879, 1, 4, 655447, 2, 4, 655447, 5, 1, 1441879, 5, 0, 1441917, 5, 65532, 1441879, 5, 65535, 1441879, 5, 65531, 1441879, 5, 65534, 1441879, 5, 65533, 1441917, 4, 4, 655447, 3, 4, 655421, 0, 4, 655447)
+}
+
+[node name="Counter_corner" type="GridMap" parent="Wall_A_counters_y_stove" unique_id=883116436]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.005)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(5, 65531, 1441879, 5, 65530, 81)
+}
+
+[node name="fumagator" type="GridMap" parent="Wall_A_counters_y_stove" unique_id=493831981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7250001, 0.5, 0)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(4, 65533, 1441814, 4, 0, 1441814)
+}
+
+[node name="fridge" type="GridMap" parent="." unique_id=1393844086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.5, -1.385)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(3, 65531, 61)
+}
+
+[node name="pan and center counter" type="GridMap" parent="." unique_id=785063561]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 2.5, -1.015)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65531, 65530, 1310856, 65531, 65532, 1310860, 65531, 65534, 1310856, 65531, 65535, 1310856, 65531, 0, 1310856, 65531, 1, 1310856, 65531, 2, 1310856, 65531, 4, 1310858)
+}
+
+[node name="Chair y table" type="GridMap" parent="." unique_id=105430378]
+transform = Transform3D(-1, 7.642742e-15, 8.742278e-08, 0, -1, 8.742278e-08, 8.742278e-08, 8.742278e-08, 1, 0.79, 2.5, 0)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(6, 65533, 1310852, 6, 65534, 524291, 6, 65532, 131075, 6, 1, 524420, 6, 0, 131075, 6, 2, 524291)
+}
+
+[node name="Blank scene" type="GridMap" parent="." unique_id=799293462]
+transform = Transform3D(-1, 7.642742e-15, 8.742278e-08, 0, -1, 8.742278e-08, 8.742278e-08, 8.742278e-08, 1, 0, 2.5, 0)
+mesh_library = ExtResource("1_atu81")
+
+[node name="cabinets left corner" type="GridMap" parent="." unique_id=885100201]
+transform = Transform3D(4.371139e-08, -3.821371e-15, -1, -8.742278e-08, -1, 0, -1, 8.742278e-08, -4.371139e-08, -0.445, 2.52, -20.55)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65531, 65530, 1179725)
+}
+metadata/_editor_floor_ = Vector3(0, -2, 0)
+
+[node name="Cabinets right corner" type="GridMap" parent="." unique_id=1935828454]
+transform = Transform3D(1, -8.742278e-08, -8.742278e-08, -8.742278e-08, -1, 0, -8.742278e-08, 7.642742e-15, -1, 20.538, 2.57, -0.53)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65531, 65530, 1179725, 65531, 65531, 1179724, 65531, 65532, 1179724)
+}
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=446055781]
+transform = Transform3D(0.90777755, 0.21603361, 0.3595406, -1.498719e-07, -0.85716736, 0.515038, 0.419452, -0.46754, -0.7781172, 0, 0, 0)
+light_color = Color(0.9627163, 0.8413964, 0.87746525, 1)
+directional_shadow_mode = 0
+sky_mode = 1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=648297340]
+environment = SubResource("Environment_yoxea")
+
+[node name="right sink" type="GridMap" parent="." unique_id=1978745677]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.365, 0.5, -0.505)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65535, 5, 655445, 65534, 5, 655448)
+}
+
+[node name="R_knife" type="GridMap" parent="." unique_id=1974447930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.765, 1.55, -0.845)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(1, 5, 393316)
+}
+
+[node name="R_ cutting board" type="GridMap" parent="." unique_id=693969910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.49, 1.575, -0.75)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(2, 5, 655377)
+}
+
+[node name="L_cutting" type="GridMap" parent="." unique_id=1628235364]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71, 1.55, -5.415)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(1, 65533, 17)
+}
+
+[node name="pot and pan" type="GridMap" parent="." unique_id=1631394504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.13, 1.675, -0.03)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(4, 1, 109, 4, 65534, 1441910)
+}
+
+[node name="left counters" type="GridMap" parent="." unique_id=1706508676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39, 0.55, 0.5)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(4, 65530, 87, 2, 65530, 87, 1, 65530, 87, 0, 65530, 87, 65535, 65530, 85, 65534, 65530, 88)
+}
+
+[node name="R_shelf" type="GridMap" parent="left counters" unique_id=427796495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.16, 2.37, 1.94)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(2, 4, 655482)
+}
+
+[node name="L_shelf" type="GridMap" parent="left counters" unique_id=549413240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.815, 2.485, -1.015)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(0, 65530, 122)
+}
+
+[node name="blank scene" type="GridMap" parent="." unique_id=687179788]
+mesh_library = ExtResource("1_atu81")
+
+[node name="jar" type="GridMap" parent="." unique_id=1043443709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89, 1.5, 0.38)
+mesh_library = ExtResource("1_atu81")
+
+[node name="jar2" type="GridMap" parent="." unique_id=1923833391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.965, 1.5, 0.165)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(4, 65535, 69)
+}
+
+[node name="jar3" type="GridMap" parent="." unique_id=2040079394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.965, 1.5, -1.05)
+mesh_library = ExtResource("1_atu81")
+
+[node name="mustards_backwall" type="GridMap" parent="." unique_id=1650747449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.965, 1.5, -1.05)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(4, 0, 71, 4, 65533, 105, 4, 3, 105)
+}
+
+[node name="ketchup" type="GridMap" parent="." unique_id=2021944251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.965, 1.5, -1.37)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(4, 0, 71, 4, 65533, 75, 4, 3, 75)
+}
+
+[node name="back wall cabinet test jars" type="GridMap" parent="." unique_id=437806047]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.485, 0.54, -1.545)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(5, 65532, 1441868, 5, 65533, 1441868)
+}
+
+[node name="must_tabA" type="GridMap" parent="." unique_id=1744275865]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -5.47, 1.885, 2.385)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65530, 0, 655465)
+}
+
+[node name="must_tabA2" type="GridMap" parent="." unique_id=739992398]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -5.705, 1.885, 2.385)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65530, 0, 655435)
+}
+
+[node name="Ket tabB" type="GridMap" parent="." unique_id=1168489743]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -5.395, 1.885, -5.575)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65530, 0, 655435)
+}
+
+[node name="Ket tabB2" type="GridMap" parent="." unique_id=1187944319]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -5.625, 1.885, -5.575)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65530, 0, 655465)
+}
+
+[node name="menu" type="GridMap" parent="." unique_id=705770403]
+transform = Transform3D(0.7289686, 0, -0.6845471, 0, 1, 0, 0.6845471, 0, 0.7289686, 3.65, 1.88, 7.48)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65530, 3, 655464)
+}
+
+[node name="L_knife" type="GridMap" parent="." unique_id=202820646]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57, 1.615, -1.105)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(2, 65531, 917604)
+}
+
+[node name="crates" type="GridMap" parent="." unique_id=719650407]
+transform = Transform3D(-1, 7.642742e-15, 8.742278e-08, 0, -1, 8.742278e-08, 8.742278e-08, 8.742278e-08, 1, 0, 2.5, 0)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(65535, 65535, 1179655, 65535, 0, 1179656, 0, 65535, 1179659, 0, 0, 1179655)
+}
+
+[node name="cabinet_leftside" type="GridMap" parent="crates" unique_id=424998367]
+mesh_library = ExtResource("2_ogq5s")
