@@ -3,11 +3,15 @@
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_atu81"]
 [ext_resource type="Script" uid="uid://dbfl1ww4hx2ug" path="res://assets/scripts/cut_scene.gd" id="1_ogq5s"]
 [ext_resource type="Texture2D" uid="uid://cbtgbtdwj0yqv" path="res://assets/images/imgs/IMG_1468.png" id="2_3lqgc"]
+[ext_resource type="AudioStream" uid="uid://7h6hsiewt62s" path="res://assets/sounds/gavin_intro1.wav" id="2_bmb6k"]
 [ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="2_ogq5s"]
+[ext_resource type="AudioStream" uid="uid://d10ps03j12qwc" path="res://assets/sounds/gavin_intro2.wav" id="3_wm10s"]
+[ext_resource type="AudioStream" uid="uid://cu1wx4ivjjhgn" path="res://assets/sounds/gavin_intro3.wav" id="4_qhuho"]
+[ext_resource type="AudioStream" uid="uid://bxkj6c8k1yx5y" path="res://assets/sounds/gavin_intro4.wav" id="5_o5bj5"]
 
 [sub_resource type="Animation" id="Animation_3lqgc"]
 resource_name = "Chapter_1"
-length = 60.0
+length = 41.666668
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -15,9 +19,9 @@ tracks/0/path = NodePath("AnimationPlayer/Camera3D:position:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 2, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2),
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(-7.213338, -0.25, 0, 0.25, 0, -7.213338, -1.6666667, 0, 0, 0, 0, -0.8333334, -1.2022231, 0, 0, 0, -0.9401493, 0, 0, 0, 5.525, -1.9542952, -0.92083335, 0, 0, 5.525, 0, 0, 0, 0, 5.525, -0.50376767, 0, 0, 0, 5.525, 0, 0, 0, 0, 5.525, -0.39453125, 0, 0, 0, 5.525, 0, 0, 0, 0, 6.635, -0.3416087, -0.18500003, 0, 0, 6.635, 0, 0, 0, 0, 2.45, -0.2893092, 0.69750017, 0, 0, 2.45, 0, 0, 0, 0, -7, -0.9367263, 1.575, 0, 0),
-"times": PackedFloat32Array(0, 10, 12.633333, 18.27423, 22.333334, 25.166666, 29.633333, 32.633335, 35.000523, 37.766666, 39.7, 41.133335, 42.86919, 44.566666, 50.187023)
+"times": PackedFloat32Array(0, 3.4845, 6.117833, 11.438372, 15.497477, 18.330809, 22.797476, 25.797478, 28.164665, 30.930809, 32.864143, 34.297478, 36.033333, 37.73081, 39.733334)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
@@ -26,9 +30,9 @@ tracks/1/path = NodePath("AnimationPlayer/Camera3D:position:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 2, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2),
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(3.3844166, -0.25, 0, 0.25, 0, 3.3844166, -1.6666667, 0, 0, 0, 4.569, -0.8333334, -0.19743054, 0, 0, 4.569, -0.9290382, 0, 0, 0, 4.569, -1.9542952, 0, 0, 0, 4.569, 0, 0, 0, 0, 4.569, -0.50376767, 0, 0, 0, 4.569, 0, 0, 0, 0, 4.569, -0.39453125, 0, 0, 0, 4.569, 0, 0, 0, 0, 3.874, -0.3416087, 0.11583329, 0, 0, 3.874, 0, 0, 0, 0, 3.874, -0.2893092, 0, 0, 0, 3.874, 0, 0, 0, 0, 3.334, -0.9367263, 0.089999996, 0, 0),
-"times": PackedFloat32Array(0, 10, 12.7, 18.27423, 22.333334, 25.166666, 29.633333, 32.633335, 35.000523, 37.766666, 39.7, 41.133335, 42.86919, 44.566666, 50.187023)
+"times": PackedFloat32Array(0, 3.4845, 6.1844997, 11.438372, 15.497477, 18.330809, 22.797476, 25.797478, 28.164665, 30.930809, 32.864143, 34.297478, 36.033333, 37.73081, 39.733334)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
@@ -37,9 +41,9 @@ tracks/2/path = NodePath("AnimationPlayer/Camera3D:position:z")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 2, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2),
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(5.94605, -0.25, 0, 0.25, 0, 5.94605, -1.6666667, 0, 0, 0, 5.946, -0.8333334, 8.34465e-06, 0, 0, 5.946, -0.9290382, 0, 0, 0, 5.946, -1.9542952, 0, 0, 0, 5.946, 0, 0, 0, 0, 1.861, -0.50376767, 0.6808334, 0, 0, 1.861, 0, 0, 0, 0, -2.734, -0.39453125, 0.7658333, 0, 0, -2.734, 0, 0, 0, 0, -7.869, -0.3416087, 0.8558334, 0, 0, -7.869, 0, 0, 0, 0, -7.869, -0.2893092, 0, 0, 0, -7.869, 0, 0, 0, 0, 5.701, -0.9367263, -2.2616665, 0, 0),
-"times": PackedFloat32Array(0, 10, 12.7, 18.27423, 22.333334, 25.166666, 29.633333, 32.633335, 35.000523, 37.766666, 39.7, 41.133335, 42.86919, 44.566666, 50.187023)
+"times": PackedFloat32Array(0, 3.4845, 6.1844997, 11.438372, 15.497477, 18.330809, 22.797476, 25.797478, 28.164665, 30.930809, 32.864143, 34.297478, 36.033333, 37.73081, 39.733334)
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
@@ -48,9 +52,9 @@ tracks/3/path = NodePath("AnimationPlayer/Camera3D:rotation:x")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2),
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.5375614, -0.8333334, 0.089593574, 0, 0, -0.5375614, -0.9290382, 0, 0, 0, -0.45029494, -1.9542952, -0.0145444125, 0, 0, -0.45029494, 0, 0, 0, 0, -0.45029494, -0.50376767, 0, 0, 0, -0.45029494, 0, 0, 0, 0, -0.45029494, -0.39453125, 0, 0, 0, -0.45029494, 0, 0, 0, 0, -0.45029494, -0.3416087, 0, 0, 0, -0.45029494, 0, 0, 0, 0, -0.45029494, -0.2893092, 0, 0, 0, -0.45029494, 0, 0, 0, 0, -0.075049154, -0.9367263, -0.06254096, 0, 0),
-"times": PackedFloat32Array(10, 12.7, 18.27423, 22.333334, 25.166666, 29.633333, 32.633335, 35.000523, 37.766666, 39.7, 41.133335, 42.86919, 44.566666, 50.187023)
+"times": PackedFloat32Array(3.4845, 6.1844997, 11.438372, 15.497477, 18.330809, 22.797476, 25.797478, 28.164665, 30.930809, 32.864143, 34.297478, 36.033333, 37.73081, 39.733334)
 }
 tracks/4/type = "bezier"
 tracks/4/imported = false
@@ -59,9 +63,9 @@ tracks/4/path = NodePath("AnimationPlayer/Camera3D:rotation:y")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2),
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(1.5707964, -0.25, 0, 0.25, 0, 0, -0.8333334, 0.2617994, 0, 0, 0, -0.9290382, 0, 0, 0, -1.7453293, -1.9542952, 0.2908882, 0, 0, -1.7453293, 0, 0, 0, 0, -1.7453293, -0.50376767, 0, 0, 0, -1.7453293, 0, 0, 0, 0, -1.5707964, -0.39453125, -0.029088816, 0, 0, -1.5707964, 0, 0, 0, 0, 0, -0.3416087, -0.26179942, 0, 0, 0, 0, 0, 0, 0, 0, -0.2893092, 0, 0, 0, 0, 0, 0, 0, 0, 1.5707964, -0.9367263, -0.2617994, 0, 0),
-"times": PackedFloat32Array(10, 12.7, 18.27423, 22.333334, 25.166666, 29.633333, 32.633335, 35.000523, 37.766666, 39.7, 41.133335, 42.86919, 44.566666, 50.187023)
+"times": PackedFloat32Array(3.4845, 6.1844997, 11.438372, 15.497477, 18.330809, 22.797476, 25.797478, 28.164665, 30.930809, 32.864143, 34.297478, 36.033333, 37.73081, 39.733334)
 }
 tracks/5/type = "bezier"
 tracks/5/imported = false
@@ -70,9 +74,9 @@ tracks/5/path = NodePath("AnimationPlayer/Camera3D:rotation:z")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2),
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.8333334, 0, 0, 0, 0, -0.9290382, 0, 0, 0, 0, -1.9542952, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.50376767, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.39453125, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.3416087, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.2893092, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.9367263, 0, 0, 0),
-"times": PackedFloat32Array(10, 12.7, 18.27423, 22.333334, 25.166666, 29.633333, 32.633335, 35.000523, 37.766666, 39.7, 41.133335, 42.86919, 44.566666, 50.187023)
+"times": PackedFloat32Array(3.4845, 6.1844997, 11.438372, 15.497477, 18.330809, 22.797476, 25.797478, 28.164665, 30.930809, 32.864143, 34.297478, 36.033333, 37.73081, 39.733334)
 }
 tracks/6/type = "bezier"
 tracks/6/imported = false
@@ -106,6 +110,66 @@ tracks/8/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0, 1.31, -0.25, 0, 0.25, 0, 1.185, -0.45528314, 0.020833334, 0, 0),
 "times": PackedFloat32Array(0, 1.4666667, 2.5, 3.8666666, 5.133333, 6.5666666, 8.066667, 9.533334, 11.3, 12.5, 13.933333, 15.6, 17.101635, 18.3, 19.668303, 20.866667, 22.03497, 23.233334, 24.501637, 25.7, 26.434969, 27.633333, 29.13497, 30.333334, 31.901634, 33.1, 34.1683, 35.366665, 36.568302, 37.766666, 39.068302, 40.266666, 41.8683, 43.066666, 44.468304, 45.666668, 47.101635, 48.3, 49.8, 50.998363, 53.001637, 54.2, 55.8683, 57.066666)
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = false
+tracks/9/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D:stream")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D2:playing")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(6.733333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D3:playing")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(22.733334),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D4:playing")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(33.366665),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_1h712"]
@@ -209,6 +273,66 @@ tracks/8/keys = {
 "points": PackedFloat32Array(1.31, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D:stream")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_bmb6k")]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D2:playing")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D3:playing")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Camera3D/MeshInstance3D/AudioStreamPlayer3D4:playing")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_odmne"]
 _data = {
@@ -242,7 +366,7 @@ libraries/ = SubResource("AnimationLibrary_odmne")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.213338, 3.3844166, 5.94605)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="AnimationPlayer/Camera3D" unique_id=1388054589]
-transform = Transform3D(1.31, 0, 0, 0, 1.31, 0, 0, 0, 1.31, -0.465, -0.3, -0.805)
+transform = Transform3D(1.3068088, -0.091380976, 0, 0.091380976, 1.3068088, 0, 0, 0, 1.31, -0.655, -0.3, -0.805)
 mesh = SubResource("QuadMesh_1h712")
 
 [node name="SubViewport" type="SubViewport" parent="AnimationPlayer/Camera3D/MeshInstance3D" unique_id=121039514]
@@ -253,6 +377,22 @@ offset_right = 2732.0
 offset_bottom = 2048.0
 scale = Vector2(0.135, 0.135)
 texture = ExtResource("2_3lqgc")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="AnimationPlayer/Camera3D/MeshInstance3D" unique_id=1492458988]
+transform = Transform3D(-3.3367474e-08, 0, -0.7633588, 0, 0.7633588, 0, 0.7633588, 0, -3.3367474e-08, 4.893931, -2.3545165, 6.1208687)
+stream = ExtResource("2_bmb6k")
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="AnimationPlayer/Camera3D/MeshInstance3D" unique_id=1001309663]
+transform = Transform3D(-3.3367474e-08, 0, -0.7633588, 0, 0.7633588, 0, 0.7633588, 0, -3.3367474e-08, 4.893931, -2.3545165, 6.1208687)
+stream = ExtResource("3_wm10s")
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="AnimationPlayer/Camera3D/MeshInstance3D" unique_id=1236933883]
+transform = Transform3D(-3.3367474e-08, 0, -0.7633588, 0, 0.7633588, 0, 0.7633588, 0, -3.3367474e-08, 4.893931, -2.3545165, 6.1208687)
+stream = ExtResource("4_qhuho")
+
+[node name="AudioStreamPlayer3D4" type="AudioStreamPlayer3D" parent="AnimationPlayer/Camera3D/MeshInstance3D" unique_id=704194154]
+transform = Transform3D(-3.3367474e-08, 0, -0.7633588, 0, 0.7633588, 0, 0.7633588, 0, -3.3367474e-08, 4.893931, -2.3545165, 6.1208687)
+stream = ExtResource("5_o5bj5")
 
 [node name="floor" type="GridMap" parent="." unique_id=2128944956]
 mesh_library = ExtResource("1_atu81")
@@ -534,5 +674,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="prompts" type="Node3D" parent="." unique_id=1704327993]
+
+[node name="Sprite3D" type="Sprite3D" parent="prompts" unique_id=1111379904]
 
 [connection signal="timeout" from="scene_switch" to="." method="_on_scene_switch_timeout"]
