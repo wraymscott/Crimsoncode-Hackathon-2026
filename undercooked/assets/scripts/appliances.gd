@@ -58,7 +58,7 @@ func give_player_cooked_item():
 	var bodies = area.get_overlapping_bodies()
 	
 	for body in bodies:
-		if body.is_in_group("player") and (Input.get_action_raw_strength("player_interact0") or Input.get_action_raw_strength("player_interact1")):
+		if body.is_in_group("player"):
 			if body.is_holding == false:
 				body.pick_up_item(current_result.instantiate())
 				is_cooking = false
@@ -115,7 +115,7 @@ func gather_ingredients():
 					ingredient1_fulfilled = true
 
 func food_start_cook():
-	character_node.stun_player(stun_player_seconds)
+	character_node.stop_player(cook_time_seconds)
 	is_cooking = true
 	cook_timer.start(cook_time_seconds)
 	if sound_effect != null:

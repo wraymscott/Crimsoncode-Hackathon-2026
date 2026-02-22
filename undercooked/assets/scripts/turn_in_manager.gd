@@ -45,3 +45,7 @@ func validate_order(attempted_item):
 			
 func update_orders(orders):
 	current_orders = orders
+
+func update_labels():
+	player1_label.text = "Player 1: " + str(player1_money)
+	player2_label.text = "Player 2: " + str(player2_money)

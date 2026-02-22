@@ -6,12 +6,16 @@ extends CharacterBody3D
 @onready var pickup_reach := $pickup_reach
 @onready var star_emmiter = $dizzy_stars
 
+@onready var turn_in_manager = $"../turn_in_manager"
+
 @onready var punch_box = $punch_reach
 
 @onready var stun_timer = $stun_timer
+@onready var punch_cooldown = $punch_cooldown
 
 @onready var footsteps = $Footsteps
 
+@onready var hand_attachment_node = get_node("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
 @export var player_id = 0;
 
 const SPEED = 7.0
@@ -19,6 +23,7 @@ const JUMP_VELOCITY = 4.5
 
 var is_holding = false
 var item
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -59,7 +64,10 @@ func _physics_process(delta: float) -> void:
 	if Input.get_action_raw_strength("clear_item1") and player_id == 1:
 		kill_item()
 		
-	if Input.is_action_just_pressed("player_attack0") and player_id == 0:
+	if Input.is_action_just_pressed("player_attack0") and player_id == 0 and punch_cooldown.time_left == 0:
+		state_machine.travel("stab")
+		punch()
+	if Input.is_action_just_pressed("player_attack1") and player_id == 1 and punch_cooldown.time_left == 0:
 		state_machine.travel("stab")
 		punch()
 
@@ -76,7 +84,7 @@ func pick_up_item(item_node):
 	if not is_holding:
 		
 		state_machine.travel("pickup")
-		stun_player(1)
+		stop_player(1)
 		# Optional: freeze any physics (like RigidBody3D) on the item before parenting
 		if item_node is RigidBody3D:
 			item_node.freeze = true 
@@ -84,7 +92,6 @@ func pick_up_item(item_node):
 		if item_node.has_node("CollisionShape3D"):
 			item_node.get_node("CollisionShape3D").disabled = true
 		# Reparent the item to the BoneAttachment3D node
-		var hand_attachment_node = get_node("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
 		hand_attachment_node.add_child(item_node)
 
 		# Adjust position if needed, or if an offset is stored
@@ -128,11 +135,28 @@ func stun_player(seconds):
 	star_emmiter.emitting = true
 	stun_timer.start(seconds)
 
+func stop_player(seconds):
+	stun_timer.start(seconds)
+
 func punch():
 	var bodies = punch_box.get_overlapping_bodies()
 	for body in bodies:
 		if body.is_in_group("player") and (body.player_id != player_id):
 			body.hit()
+			if body.is_holding:
+				var item = body.hand_attachment_node.get_child(0)
+				body.hand_attachment_node.remove_child(item)
+				body.is_holding = false
+				
+				pick_up_item(item)
+				
+			stop_player(1)
+			punch_cooldown.start()
+			if player_id == 0:
+				turn_in_manager.player1_money -= 100
+			else:
+				turn_in_manager.player2_money -= 100
+			turn_in_manager.update_labels()
 
 func hit():
 	stun_player(2)

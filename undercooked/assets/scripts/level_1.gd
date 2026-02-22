@@ -9,8 +9,8 @@ extends Node3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	player1.stun_player(3)
-	player2.stun_player(3)
+	player1.stop_player(3)
+	player2.stop_player(3)
 	countdown_audiostream.play()
 	await get_tree().create_timer(1.125).timeout
 	await get_tree().create_timer(1).timeout
