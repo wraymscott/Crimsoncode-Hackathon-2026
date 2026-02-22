@@ -1,13 +1,13 @@
 [gd_scene format=4 uid="uid://c3hxr7d2tieiv"]
 
-[ext_resource type="Texture2D" uid="uid://bond8a3wyn25s" path="res://assets/models/level/restaurantbits_texture.png" id="1_icdep"]
+[ext_resource type="Texture2D" uid="uid://bond8a3wyn25s" path="res://assets/models/level/restaurantbits_texture.png" id="1_ge2mk"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_icdep"]
 points = PackedVector3Array(0.15801764, 0.16846648, 0.29497945, -0.032054935, 0.051941648, -0.34183007, -0.0320552, 0.14805876, -0.3418329, -0.3186191, 0.052211083, 0.1380816, 0.2902383, 0.0015152763, 0.031043613, -0.29021257, 0.19849804, -0.03104781, 0.28998426, 0.1880347, -0.1346425, -0.08288068, 0.0015020521, 0.2798847, -0.23685351, 0.012464291, -0.21627158, -0.123785235, 0.19802223, 0.26825523, 0.21629356, 0.012455391, -0.23681305, 0.25483564, 0.052229755, 0.23354943, 0.27988875, 0.19849938, 0.08288189, -0.12378806, 0.19802447, -0.26826134, -0.3186191, 0.14778891, -0.1380816, -0.0320552, 0.05194125, 0.3418329, -0.29020837, 0.0015033878, -0.03104736, 0.12795484, 0.17998013, -0.30929658, 0.3418424, 0.051939916, -0.03198917, -0.24319665, 0.15815648, 0.24319665, -0.031108268, 0.0015161935, -0.2902356, 0.12795484, 0.020019876, 0.30929658, 0.31852332, 0.1583999, 0.12739603, -0.23358516, 0.14777756, -0.2548081, -0.21622175, 0.01245834, 0.23686962, -0.32858953, 0.1795071, 0.031749707, -0.34184524, 0.051939514, -0.031989433, 0.23358518, 0.052222442, -0.2548081, -0.021209754, 0.15836735, 0.33962202, 0.12739635, 0.04159996, -0.31852415, 0.20857754, 0.19908985, -0.20857754, 0.31861666, 0.14778855, -0.13808052)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sl7lf"]
 resource_name = "restaurant"
-albedo_texture = ExtResource("1_icdep")
+albedo_texture = ExtResource("1_ge2mk")
 roughness = 0.5
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7joal"]
@@ -44,7 +44,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7joal")
 
-[node name="RigidBody3D" type="RigidBody3D" unique_id=1941227309]
+[node name="cooked_patty" type="RigidBody3D" unique_id=1941227309]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=778864107]
 shape = SubResource("ConvexPolygonShape3D_icdep")

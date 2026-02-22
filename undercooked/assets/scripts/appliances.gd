@@ -22,13 +22,11 @@ func _physics_process(delta):
 	# Get all bodies currently inside the box
 	var bodies = area.get_overlapping_bodies()
 	
-	print(ingredient1)
-	
 	for body in bodies:
 		if body.is_in_group("player") and Input.get_action_raw_strength("player_interact0"):
 			var character = body
-			character.get_item().name
-			character.clear_item()
+			if character.get_item().name == ingredient1.name:
+				character.kill_item()
 
 
 func use_ingredient(ingredient):

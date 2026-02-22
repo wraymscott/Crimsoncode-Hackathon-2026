@@ -2,4 +2,4 @@
 
 [ext_resource type="PackedScene" uid="uid://jhq4pwi63464" path="res://assets/models/level/food_burger.gltf" id="1_f7owf"]
 
-[node name="food_burger2" unique_id=1886254124 instance=ExtResource("1_f7owf")]
+[node name="burger" unique_id=1886254124 instance=ExtResource("1_f7owf")]
