@@ -15,8 +15,20 @@ extends Control
 @onready var Order4Label = $Order4Rect/Order4/Order4Label
 @onready var Order5Label = $Order5Rect/Order5/Order5Label
 
+@onready var CountdownLabel = $Countdown
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
+	CountdownLabel.set_text("3")
+	await get_tree().create_timer(1.0).timeout
+	CountdownLabel.set_text("2")
+	await get_tree().create_timer(1.0).timeout
+	CountdownLabel.set_text("1")
+	await get_tree().create_timer(1.0).timeout
+	CountdownLabel.set_text("GO!")
+	await get_tree().create_timer(1.0).timeout
+	CountdownLabel.set_text("")
 	pass # Replace with function body.
 
 
