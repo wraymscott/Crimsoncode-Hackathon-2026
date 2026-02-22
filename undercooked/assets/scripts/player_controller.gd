@@ -1,5 +1,6 @@
 extends CharacterBody3D
 
+@onready var anim_player = $Barbarian/AnimationPlayer
 @onready var animation_tree = $Barbarian/AnimationTree
 @onready var state_machine = animation_tree["parameters/playback"]
 
@@ -39,3 +40,4 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	

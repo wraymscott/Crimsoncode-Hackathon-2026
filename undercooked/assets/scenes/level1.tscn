@@ -57,7 +57,4 @@ order_scene = ExtResource("6_xoos5")
 
 [node name="CharacterBody3D2" parent="." unique_id=909875531 instance=ExtResource("1_4g7pb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.868327, 2.711463, -2.8226795)
-
-[node name="CharacterBody3D3" parent="." unique_id=1313930990 instance=ExtResource("1_4g7pb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.81988, 2.3285444, -0.75268507)
 player_id = 1
