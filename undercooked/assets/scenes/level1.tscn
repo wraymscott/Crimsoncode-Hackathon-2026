@@ -3,14 +3,35 @@
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="2_0ejtv"]
 [ext_resource type="PackedScene" uid="uid://kmgxq0gr3hw6" path="res://assets/scenes/barbarian.tscn" id="2_4g7pb"]
-[ext_resource type="PackedScene" uid="uid://dba682rmrle2v" path="res://assets/scenes/container.tscn" id="3_0ejtv"]
+[ext_resource type="PackedScene" path="res://assets/scenes/container.tscn" id="3_0ejtv"]
 [ext_resource type="PackedScene" uid="uid://dm5ir1ixckmnv" path="res://assets/scenes/items/lettuce.tscn" id="4_6khq1"]
-[ext_resource type="PackedScene" path="res://assets/scenes/items/food_ingredient_bun_2.tscn" id="6_4aev3"]
-[ext_resource type="PackedScene" uid="uid://w7s2e72oh2x5" path="res://assets/scenes/items/food_ingredient_carrot_chopped_2.tscn" id="7_f0uwh"]
-[ext_resource type="PackedScene" path="res://assets/scenes/items/food_ingredient_burger_cooked_2.tscn" id="8_kbvyv"]
+[ext_resource type="PackedScene" uid="uid://d2htr6qs5e8nq" path="res://assets/scenes/items/food_ingredient_bun_2.tscn" id="6_4aev3"]
+[ext_resource type="PackedScene" path="res://assets/scenes/items/food_ingredient_carrot_chopped_2.tscn" id="7_f0uwh"]
+[ext_resource type="PackedScene" uid="uid://c3hxr7d2tieiv" path="res://assets/scenes/items/food_ingredient_burger_cooked_2.tscn" id="8_kbvyv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4aev3"]
+size = Vector3(46.210823, 9.364898, 27.091686)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g7pb"]
-size = Vector3(50, 3, 50)
+size = Vector3(4.081459, 2.5931165, 4.2063227)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f0uwh"]
+size = Vector3(31.180897, 8.664722, 1.7331932)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uki8p"]
+size = Vector3(15.513242, 8.664722, 2.7003655)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kbvyv"]
+size = Vector3(15.043838, 8.664722, 3.2094223)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_khpyu"]
+size = Vector3(5.717882, 8.664722, 24.925407)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_egbb6"]
+size = Vector3(2.258192, 8.664722, 12.16226)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y1mtp"]
+size = Vector3(0.9544406, 10.094568, 1.0627325)
 
 [node name="level1" type="Node3D" unique_id=266848435]
 
@@ -145,13 +166,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.868626, 5.195, -6.461)
 player_id = 1
 
 [node name="containers" type="Node3D" parent="." unique_id=1358232439]
+visible = false
 
 [node name="lettuce_container" parent="containers" unique_id=581810913 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0278041, 1.993367, -2.037655)
+visible = false
 contains_item = ExtResource("4_6khq1")
 
 [node name="bun_container" parent="containers" unique_id=1611405862 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -2)
+visible = false
 contains_item = ExtResource("6_4aev3")
 
 [node name="pick_up_box" parent="containers/bun_container/Area3D" parent_id_path=PackedInt32Array(1611405862, 2059051693) index="0" unique_id=1072688316]
@@ -159,6 +183,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5260925, 0.15844727)
 
 [node name="bun_container2" parent="containers" unique_id=1487035730 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8496804, 2, 2.1088662)
+visible = false
 contains_item = ExtResource("6_4aev3")
 
 [node name="pick_up_box" parent="containers/bun_container2/Area3D" parent_id_path=PackedInt32Array(1487035730, 2059051693) index="0" unique_id=1072688316]
@@ -166,18 +191,69 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5260925, 0.15844727)
 
 [node name="carrot_container" parent="containers" unique_id=1811673388 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9932978, 1.993367, 2.2626045)
+visible = false
 contains_item = ExtResource("7_f0uwh")
 
 [node name="Patty_fridge_container" parent="containers" unique_id=2126315567 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.517012, 2.263963, 8.670771)
+visible = false
 contains_item = ExtResource("8_kbvyv")
 
 [node name="collision_list" type="Node3D" parent="." unique_id=1057681894]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="collision_list" unique_id=1790463381]
+[node name="floor collision" type="StaticBody3D" parent="collision_list" unique_id=519302224]
+visible = false
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="collision_list/StaticBody3D" unique_id=1800511958]
+[node name="fc" type="CollisionShape3D" parent="collision_list/floor collision" unique_id=1231333100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.477932, -3.0060668, 0.08975363)
+visible = false
+shape = SubResource("BoxShape3D_4aev3")
+
+[node name="crate collision" type="StaticBody3D" parent="collision_list" unique_id=723906326]
+visible = false
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/crate collision" unique_id=24396036]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0120368, 1.7986509, -0.028087616)
+visible = false
 shape = SubResource("BoxShape3D_4g7pb")
+
+[node name="right wall collision" type="StaticBody3D" parent="collision_list" unique_id=1012682410]
+visible = false
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/right wall collision" unique_id=1159573653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6524339, 4.1734924, 12.254608)
+visible = false
+shape = SubResource("BoxShape3D_f0uwh")
+
+[node name="Right counter collision" type="StaticBody3D" parent="collision_list" unique_id=1765622662]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/Right counter collision" unique_id=387154003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.3079805, 4.211212, 10.885707)
+shape = SubResource("BoxShape3D_uki8p")
+
+[node name="Left counter collision" type="StaticBody3D" parent="collision_list" unique_id=1805400292]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/Left counter collision" unique_id=1085807094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5426826, 4.211212, -11.550597)
+shape = SubResource("BoxShape3D_kbvyv")
+
+[node name="Back wall collison" type="StaticBody3D" parent="collision_list" unique_id=1752404170]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/Back wall collison" unique_id=1264095682]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.205661, 4.211212, -0.69260406)
+shape = SubResource("BoxShape3D_khpyu")
+
+[node name="Guest table collision" type="StaticBody3D" parent="collision_list" unique_id=2759599]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/Guest table collision" unique_id=107748310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.960382, 4.211212, 0.049170494)
+shape = SubResource("BoxShape3D_egbb6")
+
+[node name="chair collision 1" type="StaticBody3D" parent="collision_list" unique_id=1468263147]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/chair collision 1" unique_id=165129355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.988533, 4.926135, 4.9561234)
+shape = SubResource("BoxShape3D_y1mtp")
 
 [editable path="containers/lettuce_container"]
 [editable path="containers/bun_container"]
