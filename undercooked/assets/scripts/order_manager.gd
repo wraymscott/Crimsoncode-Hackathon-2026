@@ -12,6 +12,5 @@ func _ready():
 	
 func _on_order_timeout():
 	
-	print("herro")
 	var instanced_order_scene =  order_scene.instantiate()
 	order_container.add_child(instanced_order_scene)

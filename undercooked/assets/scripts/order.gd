@@ -33,7 +33,6 @@ func random_order():
 	
 	order_name = names[index]
 	order_ingredients = ingredients[index]
-	print(order_ingredients)
 	
 func update_order_visual(new_name, ingredients):
 	name_label.text = new_name
