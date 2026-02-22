@@ -1,14 +1,35 @@
 [gd_scene format=3 uid="uid://bfluipkh42egf"]
 
 [ext_resource type="Script" uid="uid://cwif73xaxupgv" path="res://assets/scripts/appliances.gd" id="1_tq284"]
+[ext_resource type="PackedScene" uid="uid://3n2rcwh1qe20" path="res://assets/scenes/texture_bar.tscn" id="2_5m5ig"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_j7se8"]
 size = Vector3(4, 1, 4)
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_bxadc"]
+viewport_path = NodePath("SubViewport")
+
 [node name="appliances" type="Node3D" unique_id=298008565]
 script = ExtResource("1_tq284")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=257830205]
+transparent_bg = true
+size = Vector2i(300, 50)
+
+[node name="progress_bar" parent="SubViewport" unique_id=725397802 instance=ExtResource("2_5m5ig")]
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1882233671]
 
 [node name="pick_up_box" type="CollisionShape3D" parent="Area3D" unique_id=1051834179]
 shape = SubResource("BoxShape3D_j7se8")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=875593323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.285, -0.96)
+billboard = 1
+texture = SubResource("ViewportTexture_bxadc")
+
+[node name="cook_timer" type="Timer" parent="." unique_id=2082499801]
+wait_time = 10.0
+one_shot = true
+
+[connection signal="timeout" from="cook_timer" to="." method="_on_cook_timer_timeout"]

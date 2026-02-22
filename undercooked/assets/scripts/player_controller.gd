@@ -61,7 +61,6 @@ func detect_floor_item():
 		if body.is_in_group("items") and not is_holding:
 			pick_up_item(body)
 			body.queue_free()
-			is_holding
 
 func pick_up_item(item_node):
 	
@@ -81,7 +80,7 @@ func pick_up_item(item_node):
 		item_node.global_transform.origin = hand_attachment_node.global_transform.origin
 		# ... other transform adjustments
 		
-		$Pickup_Ingredient.play()
+		#$Pickup_Ingredient.play()
 		
 		is_holding = true
 		

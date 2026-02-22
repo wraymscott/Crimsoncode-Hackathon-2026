@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://3n2rcwh1qe20"]
+
+[node name="Control" type="Control" unique_id=725397802]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=2021369995]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 4.0
+show_percentage = false
