@@ -4,16 +4,13 @@
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="Environment" uid="uid://b8qokehsivgyt" path="res://assets/default_environment.tres" id="3_0ejtv"]
 [ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="3_xoos5"]
-[ext_resource type="PackedScene" uid="uid://d0kbtlgi4l1be" path="res://assets/scenes/order_manager.tscn" id="4_lr0kx"]
+[ext_resource type="PackedScene" path="res://assets/scenes/order_manager.tscn" id="4_lr0kx"]
 [ext_resource type="PackedScene" uid="uid://c3j8sxc4ya07t" path="res://assets/scenes/order.tscn" id="6_xoos5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g7pb"]
 size = Vector3(20, 1, 20)
 
 [node name="level1" type="Node3D" unique_id=875523984]
-
-[node name="CharacterBody3D" parent="." unique_id=1426300063 instance=ExtResource("1_4g7pb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.0497556, 0)
 
 [node name="floor" type="GridMap" parent="." unique_id=116662419]
 mesh_library = ExtResource("1_14qug")
@@ -57,3 +54,10 @@ environment = ExtResource("3_0ejtv")
 [node name="order_manager" parent="." unique_id=20328860 instance=ExtResource("4_lr0kx")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 12.45, 0)
 order_scene = ExtResource("6_xoos5")
+
+[node name="CharacterBody3D2" parent="." unique_id=909875531 instance=ExtResource("1_4g7pb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.868327, 2.711463, -2.8226795)
+
+[node name="CharacterBody3D3" parent="." unique_id=1313930990 instance=ExtResource("1_4g7pb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.81988, 2.3285444, -0.75268507)
+player_id = 1

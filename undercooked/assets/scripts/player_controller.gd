@@ -3,6 +3,8 @@ extends CharacterBody3D
 @onready var animation_tree = $Barbarian/AnimationTree
 @onready var state_machine = animation_tree["parameters/playback"]
 
+@export var player_id = 0;
+
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
@@ -12,13 +14,14 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 #
-	## Handle jump.
-	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		#velocity.y = JUMP_VELOCITY
+	var input_dir := Vector2.ZERO
+	
+	if player_id == 0:
+		input_dir = Input.get_vector("player_left0", "player_right0", "player_up0", "player_down0")
+	elif player_id == 1:
+		input_dir = Input.get_vector("player_left1", "player_right1", "player_up1", "player_down1")
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+		
 	var direction := Vector3(input_dir.x, 0, input_dir.y).normalized()
 	
 
