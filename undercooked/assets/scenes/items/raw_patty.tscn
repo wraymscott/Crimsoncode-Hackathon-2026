@@ -44,7 +44,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7joal")
 
-[node name="RigidBody3D" type="RigidBody3D" unique_id=1941227309]
+[node name="patty" type="RigidBody3D" unique_id=1941227309]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=778864107]
 shape = SubResource("ConvexPolygonShape3D_icdep")
