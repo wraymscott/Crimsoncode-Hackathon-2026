@@ -59,6 +59,7 @@ func give_player_cooked_item():
 	for body in bodies:
 		if body.is_in_group("player"):
 			if body.is_holding == false:
+				print("hey")
 				body.pick_up_item(current_result.instantiate())
 				is_cooking = false
 				food_cooked = false
@@ -110,8 +111,9 @@ func gather_ingredients():
 					character.kill_item()
 					if ingredient1_fulfilled and ingredient2_fulfilled:
 						food_start_cook()
+						current_result = resulting_item
 						character_node = body
-					ingredient1_fulfilled = true
+					ingredient3_fulfilled = true
 
 func food_start_cook():
 	if stun_player:

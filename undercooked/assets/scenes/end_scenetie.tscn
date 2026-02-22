@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://ckjx1i51fj3sv"]
+
+[ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_0mgy5"]
+[ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="2_7gb7o"]
+[ext_resource type="PackedScene" uid="uid://6g0aaovg01m3" path="res://assets/scenes/cutscene_player.tscn" id="3_hb7qe"]
+[ext_resource type="LabelSettings" uid="uid://cgsd1lo434n0f" path="res://assets/scenes/big.tres" id="4_0mgy5"]
+[ext_resource type="AudioStream" uid="uid://cysujvndimko6" path="res://assets/sounds/198089__littleboot__applause-four.wav" id="5_7gb7o"]
+
+[sub_resource type="Animation" id="Animation_x0wp4"]
+resource_name = "End"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u6s3n"]
+_data = {
+&"End": SubResource("Animation_x0wp4")
+}
+
+[sub_resource type="Environment" id="Environment_016cn"]
+background_mode = 1
+background_color = Color(0.99215686, 0.84313726, 0.827451, 1)
+ssr_enabled = true
+ssr_max_steps = 32
+ssr_fade_in = 0.24367559
+ssao_enabled = true
+ssil_enabled = true
+
+[node name="EndScene" type="Node3D" unique_id=40203807]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1010793406]
+libraries/ = SubResource("AnimationLibrary_u6s3n")
+
+[node name="GridMap" type="GridMap" parent="." unique_id=476017299]
+mesh_library = ExtResource("1_0mgy5")
+cell_size = Vector3(4, 2, 4)
+data = {
+"cells": PackedInt32Array(65535, 65535, 23, 65535, 0, 23, 0, 0, 23, 0, 65535, 23, 65535, 65534, 23, 0, 65534, 23, 1, 65534, 23, 1, 65535, 23, 1, 0, 23, 1, 1, 23, 0, 1, 23, 65535, 1, 23, 65534, 1, 23, 65534, 0, 23, 65534, 65535, 23, 65534, 65533, 23, 65534, 65534, 23, 65535, 65532, 23, 65535, 65533, 23, 0, 65533, 23, 1, 65533, 23)
+}
+
+[node name="GridMap2" type="GridMap" parent="." unique_id=902594590]
+mesh_library = ExtResource("2_7gb7o")
+cell_size = Vector3(4, 2, 4)
+data = {
+"cells": PackedInt32Array(65535, 65535, 23, 65535, 0, 23, 0, 0, 23, 0, 65535, 23, 65535, 65534, 23, 0, 65534, 23, 1, 65534, 23, 1, 65535, 23, 0, 1, 23, 65535, 1, 23, 65534, 1, 23, 65534, 0, 23, 65534, 65535, 23, 65534, 65533, 0, 65534, 65534, 23, 65535, 65532, 23, 65535, 65533, 0, 0, 65533, 0, 1, 65533, 0, 65533, 65533, 1441792, 65533, 65534, 1441792, 65533, 65535, 1441792, 65533, 0, 1441792, 65533, 1, 1441792)
+}
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1152116908]
+environment = SubResource("Environment_016cn")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1809417805]
+transform = Transform3D(0.77967685, 0, 0.6261821, 0, 1, 0, -0.6261821, 0, 0.77967685, -2.89, 2.893, -5.24)
+
+[node name="Barbarian" parent="." unique_id=1210827197 instance=ExtResource("3_hb7qe")]
+transform = Transform3D(0.66262, 0, 0.74895567, 0, 1, 0, -0.74895567, 0, 0.66262, -5.529, 1.477, -6.625)
+
+[node name="Barbarian2" parent="." unique_id=717679768 instance=ExtResource("3_hb7qe")]
+transform = Transform3D(0.9829353, 0, 0.18395133, 0, 1, 0, -0.18395133, 0, 0.9829353, -3.519, 1.477, -8.52)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1244812635]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 34.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=463444543]
+layout_mode = 2
+text = "Tie"
+label_settings = ExtResource("4_0mgy5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1071016176]
+stream = ExtResource("5_7gb7o")
+autoplay = true
+
+[editable path="Barbarian"]
+[editable path="Barbarian2"]

@@ -23,6 +23,7 @@ const JUMP_VELOCITY = 4.5
 
 var is_holding = false
 var item
+var is_shielded = false
 
 
 func _physics_process(delta: float) -> void:
@@ -159,8 +160,10 @@ func punch():
 			turn_in_manager.update_labels()
 
 func hit():
-	stun_player(2)
-	state_machine.travel("hit")
+	if not is_shielded:
+		stun_player(2)
+		state_machine.travel("hit")
+	is_shielded = false
 	
 
 func _on_stun_timer_timeout() -> void:
