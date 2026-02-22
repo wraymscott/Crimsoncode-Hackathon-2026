@@ -154,7 +154,6 @@ contains_item = ExtResource("4_6khq1")
 
 [node name="bun_container" parent="containers" unique_id=1611405862 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -2)
-contains_item = ExtResource("4_6khq1")
 
 [node name="pick_up_box" parent="containers/bun_container/Area3D" parent_id_path=PackedInt32Array(1611405862, 2059051693) index="0" unique_id=1072688316]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5260925, 0.15844727)
