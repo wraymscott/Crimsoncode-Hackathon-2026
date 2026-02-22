@@ -453,9 +453,6 @@ data = {
 [node name="Counter_corner" type="GridMap" parent="Wall_A_counters_y_stove" unique_id=883116436]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.005)
 mesh_library = ExtResource("1_atu81")
-data = {
-"cells": PackedInt32Array(5, 65531, 1441879, 5, 65530, 81)
-}
 
 [node name="fumagator" type="GridMap" parent="Wall_A_counters_y_stove" unique_id=493831981]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7250001, 0.5, 0)
@@ -648,6 +645,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57, 1.615, -1.105)
 mesh_library = ExtResource("1_atu81")
 data = {
 "cells": PackedInt32Array(2, 65531, 917604)
+}
+
+[node name="L_knife2" type="GridMap" parent="." unique_id=2094620808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415, 0.505, -0.5)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(5, 65531, 1441879, 5, 65530, 1441879)
 }
 
 [node name="crates" type="GridMap" parent="." unique_id=719650407]
