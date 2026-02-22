@@ -26,6 +26,11 @@ func _physics_process(delta: float) -> void:
 #
 	var input_dir := Vector2.ZERO
 	
+		
+	if Input.is_action_just_pressed("player_attack1") and player_id == 0:
+		state_machine.travel("stab")
+		
+	
 	if player_id == 0 and stun_timer.time_left == 0:
 		input_dir = Input.get_vector("player_left0", "player_right0", "player_up0", "player_down0")
 	elif player_id == 1 and stun_timer.time_left == 0:
@@ -52,7 +57,9 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 		footsteps.stop()
 
-	if Input.get_action_raw_strength("clear_item0"):
+	if Input.get_action_raw_strength("clear_item0") and player_id == 0:
+		kill_item()
+	if Input.get_action_raw_strength("clear_item1") and player_id == 1:
 		kill_item()
 
 	move_and_slide()
@@ -68,7 +75,6 @@ func detect_floor_item():
 			body.queue_free()
 
 func pick_up_item(item_node):
-	
 	if not is_holding:
 		
 		state_machine.travel("pickup")
@@ -79,7 +85,6 @@ func pick_up_item(item_node):
 
 		if item_node.has_node("CollisionShape3D"):
 			item_node.get_node("CollisionShape3D").disabled = true
-		
 		# Reparent the item to the BoneAttachment3D node
 		var hand_attachment_node = get_node("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
 		hand_attachment_node.add_child(item_node)

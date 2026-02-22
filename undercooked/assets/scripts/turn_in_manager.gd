@@ -3,8 +3,8 @@ extends Node3D
 @onready var area = $Area3D
 @onready var order_manager = $"../order_manager"
 
-@onready var player1_label = $"../player1_score"
-@onready var player2_label = $"../player2_score"
+@onready var player1_label = $"../HBoxContainer/VBoxContainer/player1_score"
+@onready var player2_label = $"../HBoxContainer/VBoxContainer/player2_score"
 
 
 @onready var audio = $AudioStreamPlayer3D
