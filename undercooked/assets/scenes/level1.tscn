@@ -1,15 +1,6 @@
 [gd_scene format=3 uid="uid://bfyirmbrtswgp"]
 
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
-[ext_resource type="PackedScene" uid="uid://k0ao8lvcmgug" path="res://assets/scenes/player.tscn" id="2_4g7pb"]
-
-[sub_resource type="Environment" id="Environment_4g7pb"]
-background_mode = 2
-background_energy_multiplier = 3.42
-ambient_light_source = 2
-
-[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_4g7pb"]
-exposure_multiplier = 1.43
 
 [node name="level1" type="Node3D" unique_id=266848435]
 
@@ -49,7 +40,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045, 0.5, 2.245)
 mesh_library = ExtResource("1_14qug")
 cell_size = Vector3(4, 2, 4)
 data = {
-"cells": PackedInt32Array(2, 65532, 655496, 1, 65532, 655496, 0, 65532, 655496, 65535, 65532, 655496, 65534, 65532, 655496, 65533, 65532, 655496, 65532, 65532, 655498)
+"cells": PackedInt32Array(2, 65532, 655496, 1, 65532, 655496, 65533, 65532, 655496, 65532, 65532, 655498)
 }
 
 [node name="stove_wall" type="GridMap" parent="." unique_id=1608661941]
@@ -59,9 +50,6 @@ cell_size = Vector3(4, 2, 4)
 data = {
 "cells": PackedInt32Array(2, 65532, 655496, 1, 65532, 655496, 0, 65532, 655496, 65535, 65532, 655496, 65534, 65532, 655496, 65533, 65532, 655496, 65532, 65532, 655498)
 }
-
-[node name="CharacterBody3D" parent="." unique_id=2146720752 instance=ExtResource("2_4g7pb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1393023, 2.2498977, -2.832386)
 
 [node name="Wall_A_counters_y_stove" type="GridMap" parent="." unique_id=1269495490]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.5, 1.5)
@@ -74,7 +62,7 @@ data = {
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.005)
 mesh_library = ExtResource("1_14qug")
 data = {
-"cells": PackedInt32Array(5, 65531, 1441879, 2, 65530, 87, 4, 65530, 87, 5, 65530, 81, 65534, 65530, 87, 65535, 65530, 87, 1, 65530, 87, 0, 65530, 87)
+"cells": PackedInt32Array(5, 65531, 1441879, 5, 65530, 81)
 }
 
 [node name="fumagator" type="GridMap" parent="Wall_A_counters_y_stove" unique_id=1084341739]
@@ -131,10 +119,4 @@ data = {
 "cells": PackedInt32Array(65535, 65535, 1179655, 65535, 0, 1179656, 0, 65535, 1179659, 0, 0, 1179655)
 }
 
-[node name="blank scene" type="GridMap" parent="crates" unique_id=125840497]
-
 [node name="cabinet_leftside" type="GridMap" parent="crates" unique_id=1419869080]
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=691347523]
-environment = SubResource("Environment_4g7pb")
-camera_attributes = SubResource("CameraAttributesPractical_4g7pb")
