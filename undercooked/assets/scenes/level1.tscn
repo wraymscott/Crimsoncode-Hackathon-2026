@@ -30,6 +30,21 @@ size = Vector3(2.258192, 8.664722, 12.16226)
 [sub_resource type="BoxShape3D" id="BoxShape3D_y1mtp"]
 size = Vector3(0.9544406, 10.094568, 1.0627325)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_5o48e"]
+size = Vector3(0.9544406, 10.094568, 1.0627325)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k3v2w"]
+size = Vector3(0.9544406, 10.094568, 1.0627325)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iemjl"]
+size = Vector3(0.9544406, 10.094568, 1.0627325)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ow024"]
+size = Vector3(0.9544406, 10.094568, 1.0627325)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jx24s"]
+size = Vector3(0.9544406, 10.094568, 1.0627325)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_4aev3"]
 size = Vector3(34.90448, 1.6890976, 28.95651)
 
@@ -251,19 +266,45 @@ visible = false
 shape = SubResource("BoxShape3D_egbb6")
 
 [node name="chair collision 1" type="StaticBody3D" parent="collision_list" unique_id=1468263147]
-visible = false
 
 [node name="fc" type="CollisionShape3D" parent="collision_list/chair collision 1" unique_id=165129355]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.988533, 4.926135, 4.9561234)
-visible = false
 shape = SubResource("BoxShape3D_y1mtp")
 
+[node name="chair collision 2" type="StaticBody3D" parent="collision_list" unique_id=699656482]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/chair collision 2" unique_id=65089833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.988533, 4.926135, 3.0146408)
+shape = SubResource("BoxShape3D_5o48e")
+
+[node name="chair collision 3" type="StaticBody3D" parent="collision_list" unique_id=971927916]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/chair collision 3" unique_id=1284178572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.988533, 4.926135, 1.0280533)
+shape = SubResource("BoxShape3D_k3v2w")
+
+[node name="chair collision 4" type="StaticBody3D" parent="collision_list" unique_id=1260042867]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/chair collision 4" unique_id=1673277171]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.988533, 4.926135, -0.9777639)
+shape = SubResource("BoxShape3D_iemjl")
+
+[node name="chair collision 5" type="StaticBody3D" parent="collision_list" unique_id=72914231]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/chair collision 5" unique_id=1789966853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.988533, 4.926135, -3.0392168)
+shape = SubResource("BoxShape3D_ow024")
+
+[node name="chair collision 6" type="StaticBody3D" parent="collision_list" unique_id=1237214562]
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/chair collision 6" unique_id=1621599544]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.988533, 4.926135, -5.0654716)
+shape = SubResource("BoxShape3D_jx24s")
+
 [node name="floor collision" type="StaticBody3D" parent="collision_list" unique_id=840997088]
-visible = false
 
 [node name="fc" type="CollisionShape3D" parent="collision_list/floor collision" unique_id=943339902]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3452187, 0.7234, 1.466085)
-visible = false
 shape = SubResource("BoxShape3D_4aev3")
 
 [editable path="containers/lettuce_container"]

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ucpnm4wlfvyf"]
+
+[ext_resource type="Script" uid="uid://dgwnc2pxhhvdq" path="res://Interactable.gd" id="1_tuat3"]
+
+[node name="Interactable" type="Area3D" unique_id=284060566]
+script = ExtResource("1_tuat3")
+action = "Cook Soup"
