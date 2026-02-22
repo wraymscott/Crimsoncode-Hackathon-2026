@@ -1,6 +1,6 @@
 extends Node3D
 
-
+@onready var area = $Area3D
 
 @export var number_of_ingredients = 3
 @export var ingredient1 : PackedScene
@@ -22,16 +22,13 @@ func _physics_process(delta):
 	# Get all bodies currently inside the box
 	var bodies = area.get_overlapping_bodies()
 	
+	print(ingredient1)
+	
 	for body in bodies:
 		if body.is_in_group("player") and Input.get_action_raw_strength("player_interact0"):
 			var character = body
-			var instanced_item =  contains_item.instantiate()
-			character.pick_up_item(instanced_item)
-			print("test")
-		if body.is_in_group("player") and Input.get_action_raw_strength("player_interact1"):
-			var character = body
-			var instanced_item =  contains_item.instantiate()
-			character.pick_up_item(instanced_item)
+			character.get_item().name
+			character.clear_item()
 
 
 func use_ingredient(ingredient):
