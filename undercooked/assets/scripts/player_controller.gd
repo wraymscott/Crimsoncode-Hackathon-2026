@@ -48,20 +48,42 @@ func _physics_process(delta: float) -> void:
 		footsteps.stop()
 
 	move_and_slide()
+	
+	if Input.is_action_just_pressed("player_drop_item0"):
+		drop_item()
 
 func pick_up_item(item_node):
-	# Optional: freeze any physics (like RigidBody3D) on the item before parenting
-	if item_node is RigidBody3D:
-		item_node.freeze = true 
-
-	# Reparent the item to the BoneAttachment3D node
-	var hand_attachment_node = get_node("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
-	hand_attachment_node.add_child(item_node)
-
-	# Adjust position if needed, or if an offset is stored
-	item_node.global_transform.origin = hand_attachment_node.global_transform.origin
-	# ... other transform adjustments
-
 	
+	if not is_holding:
+		# Optional: freeze any physics (like RigidBody3D) on the item before parenting
+		if item_node is RigidBody3D:
+			item_node.freeze = true 
+
+		if item_node.has_node("CollisionShape3D"):
+			item_node.get_node("CollisionShape3D").disabled = true
+		
+		# Reparent the item to the BoneAttachment3D node
+		var hand_attachment_node = get_node("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
+		hand_attachment_node.add_child(item_node)
+
+		# Adjust position if needed, or if an offset is stored
+		item_node.global_transform.origin = hand_attachment_node.global_transform.origin
+		# ... other transform adjustments
+		
+		is_holding = true
+		
 func drop_item():
-	pass
+	if is_holding:
+		var hand_attachment_node = get_node("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
+		var item = hand_attachment_node.get_child(0)
+
+		# 1. Store the player's position and direction
+		var drop_pos = global_position + (-global_transform.basis.z * 1.5) # 1.5 units in front
+
+		# 2. Re-parent
+		hand_attachment_node.remove_child(item)
+		get_parent().add_child(item)
+
+		# 3. Teleport the item to the drop position
+		item.global_position = drop_pos
+		is_holding = false
