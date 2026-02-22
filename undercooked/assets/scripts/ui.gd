@@ -17,6 +17,8 @@ extends Control
 
 @onready var CountdownLabel = $Countdown
 
+var roundEnd = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	
@@ -34,7 +36,18 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	round_label.set_text(str(int(round_timer.get_time_left())))
+	
+	if round_timer.get_time_left() < 300:
+		round_label.set_text(str(int(round_timer.get_time_left())))
+		
+	if round_timer.get_time_left() < 11 && round_timer.get_time_left() > 0:
+		if fmod(round_timer.get_time_left(), 1.00) < 0.015:
+			$Clock_Tick.play()
+			
+	if round_timer.is_stopped() && roundEnd == 0:
+		roundEnd = 1
+		$End_Bell.play()
+		
 	Order1Label.set_text(order1["Name"])
 	Order2Label.set_text(order2)
 	Order3Label.set_text(order3)

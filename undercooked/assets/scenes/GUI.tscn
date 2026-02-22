@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bwxal376b0686"]
 
 [ext_resource type="Script" uid="uid://d1n40iym13ok6" path="res://assets/scripts/ui.gd" id="1_paq4i"]
+[ext_resource type="AudioStream" uid="uid://cttg6f6eikeht" path="res://assets/sounds/clock_tick.wav" id="2_5fe0y"]
+[ext_resource type="AudioStream" uid="uid://ceuq6elp1g4se" path="res://assets/sounds/end_bell.wav" id="3_nm5it"]
 
 [sub_resource type="FontVariation" id="FontVariation_ayc1w"]
 
@@ -54,7 +56,8 @@ label_settings = SubResource("LabelSettings_pslky")
 horizontal_alignment = 1
 
 [node name="round_timer" type="Timer" parent="." unique_id=902714081]
-wait_time = 300.0
+wait_time = 303.0
+one_shot = true
 autostart = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1778320181]
@@ -71,7 +74,6 @@ alignment = 1
 
 [node name="round_label" type="Label" parent="HBoxContainer" unique_id=1744311632]
 layout_mode = 2
-text = "timer"
 label_settings = SubResource("LabelSettings_ayc1w")
 horizontal_alignment = 2
 
@@ -181,3 +183,9 @@ text = "Countdown"
 label_settings = SubResource("LabelSettings_paq4i")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Clock_Tick" type="AudioStreamPlayer" parent="." unique_id=421305065]
+stream = ExtResource("2_5fe0y")
+
+[node name="End_Bell" type="AudioStreamPlayer" parent="." unique_id=1317469001]
+stream = ExtResource("3_nm5it")
