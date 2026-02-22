@@ -83,10 +83,19 @@ func pick_up_item(item_node):
 		
 		is_holding = true
 		
-func get_item():
-	var hand_attachment_node = get_node("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
-	return hand_attachment_node.get_child(0)
+func get_item_name():
+	var hand_attachment_node = get_node_or_null("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
+
+	if hand_attachment_node and hand_attachment_node.get_child_count() > 0:
+		return hand_attachment_node.get_child(0).name
+	return "No child found"
 	
+	
+func kill_item():
+	if is_holding:
+		var hand_attachment_node = get_node("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
+		hand_attachment_node.remove_child(hand_attachment_node.get_child(0))
+		is_holding = false
 		
 func drop_item():
 	if is_holding:
