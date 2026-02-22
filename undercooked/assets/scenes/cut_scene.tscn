@@ -647,11 +647,29 @@ data = {
 "cells": PackedInt32Array(2, 65531, 917604)
 }
 
-[node name="L_knife2" type="GridMap" parent="." unique_id=2094620808]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415, 0.505, -0.5)
+[node name="counter left corner" type="GridMap" parent="." unique_id=2094620808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415, 0.285, -0.5)
+mesh_library = ExtResource("1_atu81")
+
+[node name="counter left corner2" type="GridMap" parent="." unique_id=1134582834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.395, 0.55, 0.5)
 mesh_library = ExtResource("1_atu81")
 data = {
-"cells": PackedInt32Array(5, 65531, 1441879, 5, 65530, 1441879)
+"cells": PackedInt32Array(5, 65530, 81)
+}
+
+[node name="counter left corner3" type="GridMap" parent="." unique_id=295989911]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.395, 0.55, 0.5)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(5, 65530, 81, 5, 65531, 1441879, 5, 65532, 1441879)
+}
+
+[node name="counter left corner4" type="GridMap" parent="." unique_id=1621040049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.395, 0.55, -0.4)
+mesh_library = ExtResource("1_atu81")
+data = {
+"cells": PackedInt32Array(5, 65530, 81, 5, 65531, 1441879, 5, 65532, 1441879, 5, 65533, 1441879)
 }
 
 [node name="crates" type="GridMap" parent="." unique_id=719650407]
