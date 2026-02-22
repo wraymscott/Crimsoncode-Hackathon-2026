@@ -9,7 +9,9 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
-#hello
+var is_holding = false
+var item
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -40,4 +42,20 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func pick_up_item(item_node):
+	# Optional: freeze any physics (like RigidBody3D) on the item before parenting
+	if item_node is RigidBody3D:
+		item_node.freeze = true 
+
+	# Reparent the item to the BoneAttachment3D node
+	var hand_attachment_node = get_node("Barbarian/Rig_Medium/Skeleton3D/BoneAttachment3D")
+	hand_attachment_node.add_child(item_node)
+
+	# Adjust position if needed, or if an offset is stored
+	item_node.global_transform.origin = hand_attachment_node.global_transform.origin
+	# ... other transform adjustments
+
 	
+func drop_item():
+	pass

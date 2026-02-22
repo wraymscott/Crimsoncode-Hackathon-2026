@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://djeei2dwp5p36"
+path="res://.godot/imported/Upbeat Forever Loop.ogg-9ffb6bbd02f6026eee44e58469a45579.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Upbeat Forever Loop.ogg"
+dest_files=["res://.godot/imported/Upbeat Forever Loop.ogg-9ffb6bbd02f6026eee44e58469a45579.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
