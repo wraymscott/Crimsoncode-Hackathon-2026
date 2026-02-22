@@ -5,6 +5,7 @@ extends Node3D
 
 @onready var turn_in_manager = $"../turn_in_manager"
 
+
 @export var order_scene: PackedScene 
 
 @export var burger : PackedScene
@@ -56,7 +57,8 @@ func update_orders(remove_item):
 	# .erase() finds the first match and removes it safely
 	orders.erase(remove_item)
 	for child in order_container.get_children():
-		if child.name == remove_item:
+		print(child.order_name)
+		if child.order_name == remove_item:
 			child.queue_free()
 			break
 	turn_in_manager.update_orders(orders)

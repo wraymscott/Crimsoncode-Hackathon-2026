@@ -24,6 +24,7 @@ func _on_patience_timeout():
 	queue_free()
 
 func create_order_2_ingredient(result_thumbnail : Texture2D, ingredient1_thumbnail : Texture2D, ingredient2_thumbnail : Texture2D):
+	order_name = "stew"
 	result.texture = result_thumbnail
 	ingredient1.texture = ingredient1_thumbnail
 	ingredient2.texture = ingredient2_thumbnail
@@ -31,6 +32,7 @@ func create_order_2_ingredient(result_thumbnail : Texture2D, ingredient1_thumbna
 
 
 func create_order_3_ingredient(result_thumbnail : Texture2D, ingredient1_thumbnail : Texture2D, ingredient2_thumbnail : Texture2D, ingredient3_thumbnail : Texture2D):
+	order_name = "burger"
 	result.texture = result_thumbnail
 	ingredient1.texture = ingredient1_thumbnail
 	ingredient2.texture = ingredient2_thumbnail

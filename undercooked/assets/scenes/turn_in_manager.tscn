@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bwl7cwifwloyg"]
 
 [ext_resource type="Script" uid="uid://bstmob2vurev" path="res://assets/scripts/turn_in_manager.gd" id="1_fc2uf"]
+[ext_resource type="AudioStream" uid="uid://b2hrd2x7wxq8t" path="res://assets/sounds/kaching.wav" id="2_s17gh"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_upb05"]
 size = Vector3(4, 1, 4)
@@ -12,3 +13,7 @@ script = ExtResource("1_fc2uf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1262213041]
 shape = SubResource("BoxShape3D_upb05")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1778247967]
+stream = ExtResource("2_s17gh")
+volume_db = 16.205
