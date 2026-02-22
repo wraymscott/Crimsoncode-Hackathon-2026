@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c3hxr7d2tieiv"]
+
+[ext_resource type="PackedScene" uid="uid://c2pmcsn5pcsh5" path="res://assets/models/level/food_ingredient_burger_cooked.gltf" id="1_icdep"]
+
+[node name="food_ingredient_burger_cooked2" unique_id=49306098 instance=ExtResource("1_icdep")]
