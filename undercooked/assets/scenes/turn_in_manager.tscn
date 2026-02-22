@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bwl7cwifwloyg"]
+
+[ext_resource type="Script" uid="uid://bstmob2vurev" path="res://assets/scripts/turn_in_manager.gd" id="1_fc2uf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_upb05"]
+size = Vector3(4, 1, 4)
+
+[node name="turn_in_manager" type="Node3D" unique_id=1896386892]
+script = ExtResource("1_fc2uf")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1407770754]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1262213041]
+shape = SubResource("BoxShape3D_upb05")

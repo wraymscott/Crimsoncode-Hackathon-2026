@@ -6,7 +6,8 @@
 script = ExtResource("1_12a0g")
 
 [node name="order_timer" type="Timer" parent="." unique_id=665519327]
-wait_time = 5.0
+wait_time = 30.0
+one_shot = true
 
 [node name="gui" type="Control" parent="." unique_id=1037381821]
 layout_mode = 3
@@ -21,4 +22,4 @@ offset_bottom = 40.0
 
 [node name="order_container" type="HBoxContainer" parent="gui/VBoxContainer" unique_id=506673912]
 layout_mode = 2
-theme_override_constants/separation = 125
+theme_override_constants/separation = 150

@@ -3,34 +3,35 @@
 [ext_resource type="Script" uid="uid://cwif73xaxupgv" path="res://assets/scripts/appliances.gd" id="1_tq284"]
 [ext_resource type="PackedScene" uid="uid://3n2rcwh1qe20" path="res://assets/scenes/texture_bar.tscn" id="2_5m5ig"]
 [ext_resource type="PackedScene" uid="uid://dl44je6eaprq6" path="res://assets/scenes/appliance_images.tscn" id="3_wq2nf"]
-[ext_resource type="Texture2D" uid="uid://dyfx8dham0n55" path="res://assets/images/thumbnails/burger.png" id="4_l2vl7"]
 [ext_resource type="Texture2D" uid="uid://b8hrt3s6dqv5c" path="res://assets/images/thumbnails/bun.png" id="5_3hhgd"]
 [ext_resource type="Texture2D" uid="uid://rar33ueht166" path="res://assets/images/thumbnails/cooked_patty.png" id="6_3em0e"]
 [ext_resource type="Texture2D" uid="uid://d0o4goh080bl6" path="res://assets/images/thumbnails/lettuce_chopped.png" id="7_1rekt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_j7se8"]
-size = Vector3(4, 1, 4)
+size = Vector3(2, 1, 2)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_bxadc"]
 viewport_path = NodePath("SubViewport")
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_31nah"]
+viewport_path = NodePath("SubViewport2")
+
 [node name="appliances" type="Node3D" unique_id=298008565]
 script = ExtResource("1_tq284")
+
+[node name="SubViewport2" type="SubViewport" parent="." unique_id=1433293999]
+transparent_bg = true
+
+[node name="Control" parent="SubViewport2" unique_id=1067750038 instance=ExtResource("3_wq2nf")]
+img1_thumbnail = ExtResource("5_3hhgd")
+img2_thumbnail = ExtResource("6_3em0e")
+img3_thumbnail = ExtResource("7_1rekt")
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=257830205]
 transparent_bg = true
 size = Vector2i(300, 50)
 
 [node name="progress_bar" parent="SubViewport" unique_id=725397802 instance=ExtResource("2_5m5ig")]
-
-[node name="SubViewport2" type="SubViewport" parent="." unique_id=1433293999]
-transparent_bg = true
-
-[node name="Control" parent="SubViewport2" unique_id=1067750038 instance=ExtResource("3_wq2nf")]
-result_thumbnail = ExtResource("4_l2vl7")
-img1_thumbnail = ExtResource("5_3hhgd")
-img2_thumbnail = ExtResource("6_3em0e")
-img3_thumbnail = ExtResource("7_1rekt")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1882233671]
 
@@ -41,6 +42,11 @@ shape = SubResource("BoxShape3D_j7se8")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.285, -0.96)
 billboard = 1
 texture = SubResource("ViewportTexture_bxadc")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=542948192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0984902, 2.1604543, 0.76)
+billboard = 1
+texture = SubResource("ViewportTexture_31nah")
 
 [node name="cook_timer" type="Timer" parent="." unique_id=2082499801]
 wait_time = 10.0

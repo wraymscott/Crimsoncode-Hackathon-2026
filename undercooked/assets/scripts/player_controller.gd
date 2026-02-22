@@ -52,6 +52,9 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 		footsteps.stop()
 
+	if Input.get_action_raw_strength("clear_item0"):
+		kill_item()
+
 	move_and_slide()
 	
 	#if Input.is_action_just_pressed("player_drop_item0"):

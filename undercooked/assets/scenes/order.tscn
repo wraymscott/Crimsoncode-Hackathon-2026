@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://c3j8sxc4ya07t"]
 
 [ext_resource type="Script" uid="uid://cevt2555hpurh" path="res://assets/scripts/order.gd" id="1_ksfft"]
+[ext_resource type="Texture2D" uid="uid://dyfx8dham0n55" path="res://assets/images/thumbnails/burger.png" id="2_3jyln"]
+[ext_resource type="Texture2D" uid="uid://b8hrt3s6dqv5c" path="res://assets/images/thumbnails/bun.png" id="3_di5l5"]
+[ext_resource type="Texture2D" uid="uid://rar33ueht166" path="res://assets/images/thumbnails/cooked_patty.png" id="4_5ajci"]
+[ext_resource type="Texture2D" uid="uid://d0o4goh080bl6" path="res://assets/images/thumbnails/lettuce_chopped.png" id="5_jtr41"]
 
 [node name="Control" type="Control" unique_id=1259876849]
 layout_mode = 3
@@ -14,26 +18,49 @@ script = ExtResource("1_ksfft")
 [node name="patience_timer" type="Timer" parent="." unique_id=1185691144]
 one_shot = true
 
-[node name="bg" type="ColorRect" parent="." unique_id=477971589]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=127632184]
 layout_mode = 0
-offset_right = 100.0
-offset_bottom = 100.0
-color = Color(1, 1, 0.6745098, 0.6666667)
+offset_left = 85.0
+offset_top = 2.0
+offset_right = 240.10233
+offset_bottom = 184.28822
+scale = Vector2(1.0539224, 1.1683795)
+color = Color(0.21068761, 0.32375008, 0.36892024, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="bg" unique_id=1284778796]
+[node name="result" type="TextureRect" parent="." unique_id=36200180]
+modulate = Color(0.98406583, 0.9110119, 0.9360803, 1)
+layout_mode = 0
+offset_left = 102.0
+offset_top = 26.0
+offset_right = 230.0
+offset_bottom = 154.0
+texture = ExtResource("2_3jyln")
+stretch_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="result" unique_id=685584261]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 134.0
+offset_right = 256.0
+offset_bottom = 134.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.333, 0.333)
 
-[node name="name" type="Label" parent="bg/VBoxContainer" unique_id=1899992440]
-custom_minimum_size = Vector2(10, 10)
+[node name="HBoxContainer" type="HBoxContainer" parent="result/VBoxContainer" unique_id=1521381289]
+custom_minimum_size = Vector2(2.54, 0)
 layout_mode = 2
-autowrap_mode = 2
 
-[node name="ingredients" type="Label" parent="bg/VBoxContainer" unique_id=1240032512]
-custom_minimum_size = Vector2(10, 10)
+[node name="img1" type="TextureRect" parent="result/VBoxContainer/HBoxContainer" unique_id=2018262785]
 layout_mode = 2
-autowrap_mode = 2
+texture = ExtResource("3_di5l5")
+
+[node name="img2" type="TextureRect" parent="result/VBoxContainer/HBoxContainer" unique_id=1484178443]
+layout_mode = 2
+texture = ExtResource("4_5ajci")
+
+[node name="img3" type="TextureRect" parent="result/VBoxContainer/HBoxContainer" unique_id=1155030990]
+layout_mode = 2
+texture = ExtResource("5_jtr41")
