@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://b8caucxueek11"]
+[gd_scene format=3 uid="uid://bfyirmbrtswgp"]
 
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="PackedScene" uid="uid://kmgxq0gr3hw6" path="res://assets/scenes/barbarian.tscn" id="2_4g7pb"]
@@ -146,8 +146,3 @@ shape = SubResource("BoxShape3D_4g7pb")
 [node name="container" parent="." unique_id=581810913 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6738122, 2.6262977, -0.67444134)
 contains_item = ExtResource("4_6khq1")
-
-[node name="pick_up_box" parent="container/Area3D" parent_id_path=PackedInt32Array(581810913, 2059051693) index="0" unique_id=1072688316]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4198809, 0, 0)
-
-[editable path="container"]
