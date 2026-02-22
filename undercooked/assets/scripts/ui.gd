@@ -47,6 +47,9 @@ func _process(delta: float) -> void:
 	if round_timer.is_stopped() && roundEnd == 0:
 		roundEnd = 1
 		$End_Bell.play()
+		CountdownLabel.set_text("STOP!")
+		await get_tree().create_timer(2).timeout
+		CountdownLabel.set_text("")
 		
 	Order1Label.set_text(order1["Name"])
 	Order2Label.set_text(order2)
