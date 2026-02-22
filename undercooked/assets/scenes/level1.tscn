@@ -156,10 +156,18 @@ contains_item = ExtResource("4_6khq1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0278041, 1.993367, -2.037655)
 contains_item = ExtResource("4_6khq1")
 
+[node name="pick_up_box" parent="containers/bun_container/Area3D" parent_id_path=PackedInt32Array(1611405862, 2059051693) index="0" unique_id=1072688316]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5260925, 0.15844727)
+
 [node name="carrot_container" parent="containers" unique_id=1811673388 instance=ExtResource("3_0ejtv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0278041, 1.993367, -2.037655)
+contains_item = ExtResource("4_6khq1")
+
+[node name="Patty_fridge_container" parent="containers" unique_id=2126315567 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0278041, 1.993367, -2.037655)
 contains_item = ExtResource("4_6khq1")
 
 [editable path="containers/lettuce_container"]
 [editable path="containers/bun_container"]
 [editable path="containers/carrot_container"]
+[editable path="containers/Patty_fridge_container"]
