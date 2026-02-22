@@ -6,8 +6,8 @@ extends CharacterBody3D
 
 @export var player_id = 0;
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+@export var SPEED = 5.0
+@export var JUMP_VELOCITY = 4.5
 
 var is_holding = false
 var item
