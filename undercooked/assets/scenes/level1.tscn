@@ -33,6 +33,9 @@ size = Vector3(2.258192, 8.664722, 12.16226)
 [sub_resource type="BoxShape3D" id="BoxShape3D_y1mtp"]
 size = Vector3(0.9544406, 10.094568, 1.0627325)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_5o48e"]
+size = Vector3(3.2895565, 10.022992, 28.95651)
+
 [node name="level1" type="Node3D" unique_id=266848435]
 
 [node name="floor" type="GridMap" parent="." unique_id=1333999171]
@@ -222,7 +225,6 @@ visible = false
 
 [node name="fc" type="CollisionShape3D" parent="collision_list/right wall collision" unique_id=1159573653]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6524339, 4.1734924, 12.254608)
-visible = false
 shape = SubResource("BoxShape3D_f0uwh")
 
 [node name="Right counter collision" type="StaticBody3D" parent="collision_list" unique_id=1765622662]
@@ -232,28 +234,44 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.3079805, 4.211212, 10.88570
 shape = SubResource("BoxShape3D_uki8p")
 
 [node name="Left counter collision" type="StaticBody3D" parent="collision_list" unique_id=1805400292]
+visible = false
 
 [node name="fc" type="CollisionShape3D" parent="collision_list/Left counter collision" unique_id=1085807094]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5426826, 4.211212, -11.550597)
+visible = false
 shape = SubResource("BoxShape3D_kbvyv")
 
 [node name="Back wall collison" type="StaticBody3D" parent="collision_list" unique_id=1752404170]
+visible = false
 
 [node name="fc" type="CollisionShape3D" parent="collision_list/Back wall collison" unique_id=1264095682]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.205661, 4.211212, -0.69260406)
+visible = false
 shape = SubResource("BoxShape3D_khpyu")
 
 [node name="Guest table collision" type="StaticBody3D" parent="collision_list" unique_id=2759599]
+visible = false
 
 [node name="fc" type="CollisionShape3D" parent="collision_list/Guest table collision" unique_id=107748310]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.960382, 4.211212, 0.049170494)
+visible = false
 shape = SubResource("BoxShape3D_egbb6")
 
 [node name="chair collision 1" type="StaticBody3D" parent="collision_list" unique_id=1468263147]
+visible = false
 
 [node name="fc" type="CollisionShape3D" parent="collision_list/chair collision 1" unique_id=165129355]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.988533, 4.926135, 4.9561234)
+visible = false
 shape = SubResource("BoxShape3D_y1mtp")
+
+[node name="front wall collision" type="StaticBody3D" parent="collision_list" unique_id=1619511197]
+visible = false
+
+[node name="fc" type="CollisionShape3D" parent="collision_list/front wall collision" unique_id=1729556798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.15268, 4.890347, 1.466085)
+visible = false
+shape = SubResource("BoxShape3D_5o48e")
 
 [editable path="containers/lettuce_container"]
 [editable path="containers/bun_container"]
