@@ -4,9 +4,11 @@ extends CharacterBody3D
 @onready var animation_tree = $Barbarian/AnimationTree
 @onready var state_machine = animation_tree["parameters/playback"]
 
+@onready var footsteps = $Footsteps
+
 @export var player_id = 0;
 
-const SPEED = 5.0
+const SPEED = 7.0
 const JUMP_VELOCITY = 4.5
 
 var is_holding = false
@@ -33,6 +35,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
 		
+		if !footsteps.playing:
+			footsteps.play()
+		
 		# Smoothly rotate toward that angle (0.15 is the weight/speed of turn)
 		rotation.y = lerp_angle(rotation.y, target_angle, 0.15)
 		state_machine.travel("running")
@@ -40,6 +45,7 @@ func _physics_process(delta: float) -> void:
 		state_machine.travel("idle")
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		footsteps.stop()
 
 	move_and_slide()
 
