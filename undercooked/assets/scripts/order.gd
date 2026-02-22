@@ -14,7 +14,6 @@ var order_ingredients = []
 func _ready() -> void:
 	random_order()
 	update_order_visual(order_name, order_ingredients)
-	
 	var duration = randi_range(min_time, max_time)
 	
 	patience_timer.timeout.connect(_on_patience_timeout)

@@ -1,8 +1,9 @@
 extends CharacterBody3D
-
+#alskdcnasc
 @onready var anim_player = $Barbarian/AnimationPlayer
 @onready var animation_tree = $Barbarian/AnimationTree
 @onready var state_machine = animation_tree["parameters/playback"]
+@onready var pickup_reach := $pickup_reach
 
 @onready var footsteps = $Footsteps
 
@@ -29,8 +30,6 @@ func _physics_process(delta: float) -> void:
 		
 	var direction := Vector3(input_dir.x, 0, input_dir.y).normalized()
 	
-	if Input.get_action_raw_strength("Player_hit"):
-		state_machine.travel("Hit")
 
 	if direction:
 		var target_angle = atan2(direction.x, direction.z)
@@ -51,8 +50,18 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
-	if Input.is_action_just_pressed("player_drop_item0"):
-		drop_item()
+	#if Input.is_action_just_pressed("player_drop_item0"):
+		#drop_item()
+
+
+
+func detect_floor_item():
+	var bodies = pickup_reach.get_overlapping_bodies()
+	for body in bodies:
+		if body.is_in_group("items") and not is_holding:
+			pick_up_item(body)
+			body.queue_free()
+			is_holding
 
 func pick_up_item(item_node):
 	
@@ -89,6 +98,3 @@ func drop_item():
 		# 3. Teleport the item to the drop position
 		item.global_position = drop_pos
 		is_holding = false
-		
-
-	
