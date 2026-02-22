@@ -148,8 +148,8 @@ shape = SubResource("BoxShape3D_4g7pb")
 
 [node name="containers" type="Node3D" parent="." unique_id=1358232439]
 
-[node name="container" parent="containers" unique_id=581810913 instance=ExtResource("3_0ejtv")]
+[node name="lettuce_container" parent="containers" unique_id=581810913 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0278041, 1.993367, -2.037655)
 contains_item = ExtResource("4_6khq1")
 
-[editable path="containers/container"]
+[editable path="containers/lettuce_container"]
