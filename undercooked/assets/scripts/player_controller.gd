@@ -29,6 +29,8 @@ func _physics_process(delta: float) -> void:
 		
 	var direction := Vector3(input_dir.x, 0, input_dir.y).normalized()
 	
+	if Input.get_action_raw_strength("Player_hit"):
+		state_machine.travel("Hit")
 
 	if direction:
 		var target_angle = atan2(direction.x, direction.z)
@@ -87,3 +89,6 @@ func drop_item():
 		# 3. Teleport the item to the drop position
 		item.global_position = drop_pos
 		is_holding = false
+		
+
+	
