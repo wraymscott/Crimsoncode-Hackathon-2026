@@ -3,8 +3,11 @@
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="2_0ejtv"]
 [ext_resource type="PackedScene" uid="uid://kmgxq0gr3hw6" path="res://assets/scenes/barbarian.tscn" id="2_4g7pb"]
-[ext_resource type="PackedScene" uid="uid://dba682rmrle2v" path="res://assets/scenes/container.tscn" id="3_0ejtv"]
+[ext_resource type="PackedScene" path="res://assets/scenes/container.tscn" id="3_0ejtv"]
 [ext_resource type="PackedScene" uid="uid://dm5ir1ixckmnv" path="res://assets/scenes/items/lettuce.tscn" id="4_6khq1"]
+[ext_resource type="PackedScene" uid="uid://d2htr6qs5e8nq" path="res://assets/scenes/items/food_ingredient_bun_2.tscn" id="6_4aev3"]
+[ext_resource type="PackedScene" path="res://assets/scenes/items/food_ingredient_carrot_chopped_2.tscn" id="7_f0uwh"]
+[ext_resource type="PackedScene" uid="uid://c3hxr7d2tieiv" path="res://assets/scenes/items/food_ingredient_burger_cooked_2.tscn" id="8_kbvyv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g7pb"]
 size = Vector3(20, 3, 20)
@@ -154,25 +157,25 @@ contains_item = ExtResource("4_6khq1")
 
 [node name="bun_container" parent="containers" unique_id=1611405862 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -2)
-contains_item = ExtResource("4_6khq1")
+contains_item = ExtResource("6_4aev3")
 
 [node name="pick_up_box" parent="containers/bun_container/Area3D" parent_id_path=PackedInt32Array(1611405862, 2059051693) index="0" unique_id=1072688316]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5260925, 0.15844727)
 
 [node name="bun_container2" parent="containers" unique_id=1487035730 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8496804, 2, 2.1088662)
-contains_item = ExtResource("4_6khq1")
+contains_item = ExtResource("6_4aev3")
 
 [node name="pick_up_box" parent="containers/bun_container2/Area3D" parent_id_path=PackedInt32Array(1487035730, 2059051693) index="0" unique_id=1072688316]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5260925, 0.15844727)
 
 [node name="carrot_container" parent="containers" unique_id=1811673388 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9932978, 1.993367, 2.2626045)
-contains_item = ExtResource("4_6khq1")
+contains_item = ExtResource("7_f0uwh")
 
 [node name="Patty_fridge_container" parent="containers" unique_id=2126315567 instance=ExtResource("3_0ejtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.517012, 2.263963, 8.670771)
-contains_item = ExtResource("4_6khq1")
+contains_item = ExtResource("8_kbvyv")
 
 [editable path="containers/lettuce_container"]
 [editable path="containers/bun_container"]
