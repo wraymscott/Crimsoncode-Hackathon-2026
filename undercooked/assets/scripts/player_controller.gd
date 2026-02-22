@@ -81,7 +81,7 @@ func pick_up_item(item_node):
 		item_node.global_transform.origin = hand_attachment_node.global_transform.origin
 		# ... other transform adjustments
 		
-		$Pickup_Ingredient.play()
+		#$Pickup_Ingredient.play()
 		
 		is_holding = true
 		
