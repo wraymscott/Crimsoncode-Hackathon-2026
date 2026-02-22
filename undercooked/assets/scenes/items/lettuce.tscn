@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dm5ir1ixckmnv"]
+
+[ext_resource type="PackedScene" uid="uid://dprxgvfrp5m1p" path="res://assets/models/level/food_ingredient_lettuce_slice.gltf" id="1_5d5j7"]
+
+[node name="food_ingredient_lettuce_slice2" unique_id=435845231 instance=ExtResource("1_5d5j7")]
