@@ -1,7 +1,5 @@
 [gd_scene format=3 uid="uid://3n2rcwh1qe20"]
 
-[ext_resource type="Texture2D" uid="uid://mh7qnyirmfer" path="res://assets/images/thumbnails/carrot.png" id="1_pe20o"]
-
 [node name="Control" type="Control" unique_id=725397802]
 layout_mode = 3
 anchors_preset = 0
@@ -14,15 +12,3 @@ layout_mode = 0
 offset_right = 4.0
 offset_bottom = 4.0
 show_percentage = false
-
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=976529560]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=681733621]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=813928915]
-layout_mode = 2
-texture = ExtResource("1_pe20o")

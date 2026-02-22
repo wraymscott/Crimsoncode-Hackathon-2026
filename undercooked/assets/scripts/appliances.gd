@@ -3,16 +3,24 @@ extends Node3D
 @onready var area = $Area3D
 @onready var cook_timer = $cook_timer
 @onready var progress_bar = $SubViewport/progress_bar
+@onready var sound_maker = $AudioStreamPlayer3D
 
 @export var cook_time_seconds = 10
 
 @export var number_of_ingredients = 3
+@export var multiple_uses = false
 @export var ingredient1 : PackedScene
 @export var ingredient2 : PackedScene
 @export var ingredient3 : PackedScene
 
-@export var resulting_item : PackedScene
+@export var sound_effect : AudioStreamWAV
 
+@export var resulting_item : PackedScene
+@export var resulting_item2 : PackedScene # The second possible result
+
+@export var stun_player_seconds = 0.0
+
+var current_result : PackedScene # Tracks which item to spawn at the end
 var ingredient1_fulfilled = false
 var ingredient2_fulfilled = false
 var ingredient3_fulfilled = false
@@ -51,9 +59,8 @@ func give_player_cooked_item():
 	
 	for body in bodies:
 		if body.is_in_group("player") and (Input.get_action_raw_strength("player_interact0") or Input.get_action_raw_strength("player_interact1")):
-			print("uidsolkmg")
 			if body.is_holding == false:
-				body.pick_up_item(resulting_item.instantiate())
+				body.pick_up_item(current_result.instantiate())
 				is_cooking = false
 				food_cooked = false
 				ingredient1_fulfilled = false
@@ -67,6 +74,7 @@ func gather_ingredients():
 	for body in bodies:
 		if body.is_in_group("player") and (Input.get_action_raw_strength("player_interact0") or Input.get_action_raw_strength("player_interact1")):
 			var character = body
+			character_node = character
 			var ing1_name = ingredient1.instantiate().name
 			var ing2_name = ingredient2.instantiate().name
 			var ing3_name = ingredient3.instantiate().name
@@ -79,16 +87,26 @@ func gather_ingredients():
 			match player_holding:
 				ing1_name:
 					character.kill_item()
-					if ingredient2_fulfilled and ingredient3_fulfilled:
+		# Logic for multiple results
+					if multiple_uses:
+						current_result = resulting_item # Result 1
 						food_start_cook()
-						character_node = body
+					elif ingredient2_fulfilled and ingredient3_fulfilled:
+						current_result = resulting_item # Default combined result
+						food_start_cook()
+			
 					ingredient1_fulfilled = true
+
 				ing2_name:
 					character.kill_item()
-					if ingredient1_fulfilled and ingredient3_fulfilled:
+					if multiple_uses:
+						current_result = resulting_item2 # Result 2
 						food_start_cook()
-						character_node = body
+					elif ingredient1_fulfilled and ingredient3_fulfilled:
+						current_result = resulting_item
+						food_start_cook()
 					ingredient2_fulfilled = true
+			
 				ing3_name:
 					character.kill_item()
 					if ingredient1_fulfilled and ingredient2_fulfilled:
@@ -97,8 +115,12 @@ func gather_ingredients():
 					ingredient1_fulfilled = true
 
 func food_start_cook():
+	character_node.stun_player(stun_player_seconds)
 	is_cooking = true
 	cook_timer.start(cook_time_seconds)
+	if sound_effect != null:
+		sound_maker.set_stream(sound_effect)
+		sound_maker.play()
 
 
 func _on_cook_timer_timeout() -> void:

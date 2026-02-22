@@ -2,6 +2,11 @@
 
 [ext_resource type="Script" uid="uid://cwif73xaxupgv" path="res://assets/scripts/appliances.gd" id="1_tq284"]
 [ext_resource type="PackedScene" uid="uid://3n2rcwh1qe20" path="res://assets/scenes/texture_bar.tscn" id="2_5m5ig"]
+[ext_resource type="PackedScene" uid="uid://dl44je6eaprq6" path="res://assets/scenes/appliance_images.tscn" id="3_wq2nf"]
+[ext_resource type="Texture2D" uid="uid://dyfx8dham0n55" path="res://assets/images/thumbnails/burger.png" id="4_l2vl7"]
+[ext_resource type="Texture2D" uid="uid://b8hrt3s6dqv5c" path="res://assets/images/thumbnails/bun.png" id="5_3hhgd"]
+[ext_resource type="Texture2D" uid="uid://rar33ueht166" path="res://assets/images/thumbnails/cooked_patty.png" id="6_3em0e"]
+[ext_resource type="Texture2D" uid="uid://d0o4goh080bl6" path="res://assets/images/thumbnails/lettuce_chopped.png" id="7_1rekt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_j7se8"]
 size = Vector3(4, 1, 4)
@@ -18,6 +23,15 @@ size = Vector2i(300, 50)
 
 [node name="progress_bar" parent="SubViewport" unique_id=725397802 instance=ExtResource("2_5m5ig")]
 
+[node name="SubViewport2" type="SubViewport" parent="." unique_id=1433293999]
+transparent_bg = true
+
+[node name="Control" parent="SubViewport2" unique_id=1067750038 instance=ExtResource("3_wq2nf")]
+result_thumbnail = ExtResource("4_l2vl7")
+img1_thumbnail = ExtResource("5_3hhgd")
+img2_thumbnail = ExtResource("6_3em0e")
+img3_thumbnail = ExtResource("7_1rekt")
+
 [node name="Area3D" type="Area3D" parent="." unique_id=1882233671]
 
 [node name="pick_up_box" type="CollisionShape3D" parent="Area3D" unique_id=1051834179]
@@ -31,5 +45,8 @@ texture = SubResource("ViewportTexture_bxadc")
 [node name="cook_timer" type="Timer" parent="." unique_id=2082499801]
 wait_time = 10.0
 one_shot = true
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1744956064]
+volume_db = 70.457
 
 [connection signal="timeout" from="cook_timer" to="." method="_on_cook_timer_timeout"]

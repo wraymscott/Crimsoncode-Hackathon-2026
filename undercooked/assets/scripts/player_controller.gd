@@ -4,6 +4,8 @@ extends CharacterBody3D
 @onready var animation_tree = $Barbarian/AnimationTree
 @onready var state_machine = animation_tree["parameters/playback"]
 @onready var pickup_reach := $pickup_reach
+@onready var star_emmiter = $dizzy_stars
+
 
 @onready var stun_timer = $stun_timer
 
@@ -65,6 +67,9 @@ func detect_floor_item():
 func pick_up_item(item_node):
 	
 	if not is_holding:
+		
+		state_machine.travel("pickup")
+		stun_player(1)
 		# Optional: freeze any physics (like RigidBody3D) on the item before parenting
 		if item_node is RigidBody3D:
 			item_node.freeze = true 
@@ -114,4 +119,10 @@ func drop_item():
 		is_holding = false
 
 func stun_player(seconds):
+	star_emmiter.emitting = true
 	stun_timer.start(seconds)
+
+
+func _on_stun_timer_timeout() -> void:
+	star_emmiter.emitting = false
+	pass # Replace with function body.
