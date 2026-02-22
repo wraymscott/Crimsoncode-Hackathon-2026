@@ -1,7 +1,9 @@
 extends Node3D
 
-@export var order_scene: PackedScene 
+@onready var order_timer = $order_timer
+@onready var order_container = $gui/VBoxContainer/order_container
 
+@export var order_scene: PackedScene 
 
 func _ready():
 	order_timer.timeout.connect(_on_order_timeout)
