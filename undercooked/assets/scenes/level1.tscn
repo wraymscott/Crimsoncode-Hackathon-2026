@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bfyirmbrtswgp"]
+[gd_scene format=3 uid="uid://b8caucxueek11"]
 
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="PackedScene" uid="uid://kmgxq0gr3hw6" path="res://assets/scenes/barbarian.tscn" id="2_4g7pb"]
