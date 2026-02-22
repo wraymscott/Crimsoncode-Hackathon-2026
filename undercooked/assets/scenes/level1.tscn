@@ -3,7 +3,7 @@
 [ext_resource type="MeshLibrary" uid="uid://gu4hxig1htgc" path="res://assets/models/mesh_library/kitchen_mesh_library.meshlib" id="1_14qug"]
 [ext_resource type="MeshLibrary" uid="uid://hchpsrcf2uut" path="res://assets/models/mesh_library/fixed_walls.meshlib" id="2_0ejtv"]
 [ext_resource type="PackedScene" uid="uid://kmgxq0gr3hw6" path="res://assets/scenes/barbarian.tscn" id="2_4g7pb"]
-[ext_resource type="PackedScene" uid="uid://dba682rmrle2v" path="res://assets/scenes/container.tscn" id="3_0ejtv"]
+[ext_resource type="PackedScene" path="res://assets/scenes/container.tscn" id="3_0ejtv"]
 [ext_resource type="PackedScene" uid="uid://dm5ir1ixckmnv" path="res://assets/scenes/items/lettuce.tscn" id="4_6khq1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g7pb"]
@@ -152,4 +152,14 @@ shape = SubResource("BoxShape3D_4g7pb")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0278041, 1.993367, -2.037655)
 contains_item = ExtResource("4_6khq1")
 
+[node name="bun_container" parent="containers" unique_id=1611405862 instance=ExtResource("3_0ejtv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0278041, 1.993367, -2.037655)
+contains_item = ExtResource("4_6khq1")
+
+[node name="carrot_container" parent="containers" unique_id=1811673388 instance=ExtResource("3_0ejtv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0278041, 1.993367, -2.037655)
+contains_item = ExtResource("4_6khq1")
+
 [editable path="containers/lettuce_container"]
+[editable path="containers/bun_container"]
+[editable path="containers/carrot_container"]
